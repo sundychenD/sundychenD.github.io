@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <link rel="stylesheet" href="css/uikit.min.css" />
+    	<title>Chen Di</title>
+    	<link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/mainpage_style.css">
+        <link rel='stylesheet' href='css/nprogress.css'/>
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/uikit.min.js"></script>
+        <script src='js/nprogress.js'></script>
     </head>
     <body>
+    <script type="text/javascript">
+    	NProgress.start();
+    </script>
     <div class="uk-cover-background main_bg_blur" id="main_bg_blur">
     </div>
     <div class="uk-cover-background main_bg" id="main_bg">
@@ -44,6 +49,9 @@
 		    </div>
 		</div>
     </div>
-     <script type="text/javascript" src="js/main_page.js"></script>
+    <script type="text/javascript" src="js/main_page.js"></script>
+    <script type="text/javascript">
+    	NProgress.done();
+    </script>
     </body>
 </html>
