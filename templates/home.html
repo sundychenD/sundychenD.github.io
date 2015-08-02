@@ -8,38 +8,42 @@
         <script src="../js/uikit.min.js"></script>
     </head>
     <body>
-    <div class="uk-cover-background main_container">
+    <div class="uk-cover-background main_bg_blur" id="main_bg_blur">
+    </div>
+    <div class="uk-cover-background main_bg" id="main_bg">
+    </div>
+    <div class="main_container" id="main_container">
     	<div class="uk-grid uk-width-large-1-1 bottom_navbar uk-grid-collapse">
     		<div class="uk-width-large-1-6">
-		    	<div class="uk-animation-hover uk-animation-fade navbar_title">
-			   		<h1 class="navbar_title"><a href="">Home</a></h1>
+		    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="home_button" onclick="home_action()">
+			   		<h1 class="navbar_title"><a>Home</a></h1>
 			    </div>
 		    </div>
 		    <div class="uk-width-large-1-6">
-		    	<div class="uk-animation-hover uk-animation-fade navbar_title">
-			   		<h1 class="navbar_title"><a href="">About</a></h1>
+		    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="about_button" onclick="about_action()">
+			   		<h1 class="navbar_title"><a>About</a></h1>
 			    </div>
 		    </div>
 		    <div class="uk-width-large-1-6">
-		    	<div class="uk-animation-hover uk-animation-fade navbar_title">
-			   		<h1 class="navbar_title"><a href="">Projects</a></h1>
+		    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="projects_button" onclick="projects_action()">
+			   		<h1 class="navbar_title"><a>Projects</a></h1>
 			    </div>
 		    </div>
 		    <div class="uk-width-large-1-6">
-		    	<div class="uk-animation-hover uk-animation-fade navbar_title">
-			   		<h1 class="navbar_title"><a href="">Resume</a></h1>
+		    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="resume_button">
+			   		<h1 class="navbar_title"><a href="../files/chendi_cv.pdf" target="_blank">Resume</a></h1>
 			    </div>
 		    </div>
 		    <div class="uk-width-large-1-6">
-		    	<div class="uk-animation-hover uk-animation-fade navbar_title">
-			   		<h1 class="navbar_title"><a href="">Blog</a></h1>
+		    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="blog_button">
+			   		<h1 class="navbar_title"><a>Blog</a></h1>
 			    </div>
 		    </div>
 		    <div class="uk-width-large-1-6">
 		    	<h1 class="navbar_title">Chen Di</h1>
 		    </div>
-			
 		</div>
     </div>
+     <script type="text/javascript" src="../js/main_page.js"></script>
     </body>
 </html>
