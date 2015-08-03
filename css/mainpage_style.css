@@ -1,4 +1,17 @@
 
+@font-face {
+    font-family: fontawesome-webfont;
+    src: url(../fonts/fontawesome-webfont.woff);
+}
+
+div {
+    font-family: fontawesome-webfont;
+}
+
+.uk-modal-dialog {
+    opacity: 0.8;
+}
+
 .main_bg_blur{
 	background-image: url(../images/Torii-blur.jpg);
 	position:fixed;
@@ -44,6 +57,17 @@
 .navbar_title a {
 	color: white;
 	text-decoration: none;
+}
+
+.navbar_title_pop {
+    text-align: center;
+}
+
+.navbar_title_pop a {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 .info_block {

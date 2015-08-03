@@ -13,8 +13,13 @@
     <script type="text/javascript">
     	NProgress.start();
     </script>
+    <!-- This is the blured image -->
     <div class="uk-cover-background main_bg_blur" id="main_bg_blur"></div>
+    
+    <!-- This is the unblured image -->
     <div class="uk-cover-background main_bg" id="main_bg"></div>
+    
+    <!-- This is the About info block -->
     <div class="uk-grid uk-width-large-1-1 info_block" id="about_block">
 		<div class="uk-width-2-3 uk-container-center">
 			<article class="uk-article">
@@ -31,10 +36,12 @@
 			</article>
 		</div>
     </div>
+
+    <!-- This is the Projects info block -->
     <div class="uk-grid uk-width-large-1-1 info_block" id="projects_block">
 		<div class="uk-width-2-3 uk-container-center">
 			<article class="uk-article">
-			    <h1 class="uk-article-title">About</h1>
+			    <h1 class="uk-article-title">Projects</h1>
 			    <p class="uk-article-meta">
 			    	Written by Super User on 12 April 2012. Posted in Blog
 			    </p>
@@ -47,36 +54,59 @@
 			</article>
 		</div>
     </div>
+
+	<!-- This is the pop up model -->
+	<div id="pop_up_nav" class="uk-modal">
+	    <div class="uk-modal-dialog">
+	        <a class="uk-modal-close uk-close"></a>
+	        <div class="uk-modal-close" id="home_button" onclick="home_action()">
+			   	<h2 class="navbar_title_pop"><a>Home</a></h1></div>
+		    <div class="uk-modal-close" id="about_button" onclick="about_action()">
+			   	<h2 class="navbar_title_pop"><a>About</a></h1></div>
+		    <div class="uk-modal-close" id="projects_button" onclick="projects_action()">
+			   	<h2 class="navbar_title_pop"><a>Projects</a></h1></div>
+		    <div class="uk-modal-close" id="resume_button">
+		   		<h2 class="navbar_title_pop"><a href="files/chendi_cv.pdf" target="_blank">Resume</a></h1></div>
+		    <div class="uk-modal-close" id="blog_button">
+				<h2 class="navbar_title_pop"><a>Blog</a></h1></div>
+	    </div>
+	</div>
+
+	<!-- This is the bottom navbar -->
     <div class="uk-grid uk-width-large-1-1 bottom_navbar uk-grid-collapse ">
-		<div class="uk-width-large-1-6">
-	    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="home_button" onclick="home_action()">
+		<div class="uk-width-large-1-6 uk-visible-large">
+	    	<div class="uk-animation-hover uk-animation-fade" id="home_button" onclick="home_action()">
 		   		<h1 class="navbar_title"><a>Home</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6">
-	    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="about_button" onclick="about_action()">
+	    <div class="uk-width-large-1-6 uk-visible-large">
+	    	<div class="uk-animation-hover uk-animation-fade " id="about_button" onclick="about_action()">
 		   		<h1 class="navbar_title"><a>About</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6">
-	    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="projects_button" onclick="projects_action()">
+	    <div class="uk-width-large-1-6 uk-visible-large">
+	    	<div class="uk-animation-hover uk-animation-fade " id="projects_button" onclick="projects_action()">
 		   		<h1 class="navbar_title"><a>Projects</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6">
-	    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="resume_button">
+	    <div class="uk-width-large-1-6 uk-visible-large">
+	    	<div class="uk-animation-hover uk-animation-fade " id="resume_button">
 		   		<h1 class="navbar_title"><a href="files/chendi_cv.pdf" target="_blank">Resume</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6">
-	    	<div class="uk-animation-hover uk-animation-fade navbar_title" id="blog_button">
+	    <div class="uk-width-large-1-6 uk-visible-large">
+	    	<div class="uk-animation-hover uk-animation-fade " id="blog_button">
 		   		<h1 class="navbar_title"><a>Blog</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6">
+	    <div class="uk-width-large-1-6 uk-visible-large">
+	    	<h1 class="navbar_title">Chen Di</h1>
+	    </div>
+	    <div class="uk-width-small-1-1 uk-hidden-large" data-uk-modal="{target:'#pop_up_nav'}">
 	    	<h1 class="navbar_title">Chen Di</h1>
 	    </div>
 	</div>
+
     <script type="text/javascript">
     	$(document).ready(function(){
 		    $("#about_block").hide();
