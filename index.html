@@ -165,8 +165,30 @@
 
     <script type="text/javascript">
     	$(document).ready(function(){
+    		// Hide about and project block
 		    $("#about_block").hide();
 		    $("#projects_block").hide();
+
+		    // Retrieve random background image
+		    var bgArray = [{'clear': 'Torii.jpg', 'blur': 'Torii-blur.jpg'}, 
+		    			   {'clear': 'Kiyomizu.jpg', 'blur': 'Kiyomizu-blur.jpg'}, 
+		    			   {'clear': 'Fushimi.jpg', 'blur': 'Fushimi-blur.jpg'}, 
+		    			   {'clear': 'Train_01.jpg', 'blur': 'Train_01-blur.jpg'},
+		    			   {'clear': 'Brunei.jpg', 'blur': 'Brunei-blur.jpg'}, 
+		    			   {'clear': 'Skytree_cloud.jpg', 'blur': 'Skytree_cloud-blur.jpg'}, 
+		    			   {'clear': 'NY_01.jpg', 'blur': 'NY_01-blur.jpg'}, 
+		    			   {'clear': 'Garden_01.jpg', 'blur': 'Garden_01-blur.jpg'},
+		    			   {'clear': 'SF_sea.jpg', 'blur': 'SF_sea-blur.jpg'}, 
+		    			   {'clear': 'Garden_02.jpg', 'blur': 'Garden_02-blur.jpg'}, 
+		    			   {'clear': 'SF_street.jpg', 'blur': 'SF_street-blur.jpg'},
+		    			   {'clear': 'UCB_Library.jpg', 'blur': 'UCB_Library-blur.jpg'}];
+
+		    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+			var clear_path = 'url(images/bg/' + bg['clear'] + ')';
+			var blur_path = 'url(images/bg/' + bg['blur'] + ')';
+
+			$('.main_bg').css('background-image', clear_path);
+			$('.main_bg_blur').css('background-image', blur_path);
 		});
     </script>
     <script type="text/javascript" src="js/main_page.js"></script>

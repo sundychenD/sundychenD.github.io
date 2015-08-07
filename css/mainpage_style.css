@@ -13,7 +13,7 @@ div {
 }
 
 .main_bg_blur{
-	background-image: url(../images/bg/Torii-blur.jpg);
+	background-image: "../images/bg/Torii-blur.jpg)";
 	position:fixed;
     padding:0;
     margin:0;
@@ -28,7 +28,7 @@ div {
 }
 
 .main_bg {
-	background-image: url(../images/bg/Torii.jpg);
+	background-image: "../images/bg/Torii.jpg";
 	position:fixed;
     padding:0;
     margin:0;
