@@ -5,16 +5,37 @@ $('#home_button').click(function() {
 	$('#main_container').css('background-image', blured_b_img);
 });
 */
-
+var bgArray = [{'clear': 'Torii.jpg', 'blur': 'Torii-blur.jpg'}, 
+			   {'clear': 'Kiyomizu.jpg', 'blur': 'Kiyomizu-blur.jpg'}, 
+			   {'clear': 'Fushimi.jpg', 'blur': 'Fushimi-blur.jpg'}, 
+			   {'clear': 'Train_01.jpg', 'blur': 'Train_01-blur.jpg'},
+			   {'clear': 'Brunei.jpg', 'blur': 'Brunei-blur.jpg'}, 
+			   {'clear': 'Skytree_cloud.jpg', 'blur': 'Skytree_cloud-blur.jpg'}, 
+			   {'clear': 'NY_01.jpg', 'blur': 'NY_01-blur.jpg'}, 
+			   {'clear': 'Garden_01.jpg', 'blur': 'Garden_01-blur.jpg'},
+			   {'clear': 'SF_sea.jpg', 'blur': 'SF_sea-blur.jpg'}, 
+			   {'clear': 'Garden_02.jpg', 'blur': 'Garden_02-blur.jpg'}, 
+			   {'clear': 'SF_street.jpg', 'blur': 'SF_street-blur.jpg'},
+			   {'clear': 'UCB_Library.jpg', 'blur': 'UCB_Library-blur.jpg'}];
 
 function blur_background() {
-	$('#main_bg').fadeTo("slow", 0);
-	$('#main_bg_blur').fadeTo("fast", 1);
+	if (is_showing_real_clear()) {
+		$('#main_bg').fadeTo("slow", 0);
+		$('#main_bg_blur').fadeTo("fast", 1);
+	} else {
+		$('#main_bg_dummy').fadeTo("slow", 0);
+		$('#main_bg_blur_dummy').fadeTo("fast", 1);
+	}
 }
 
 function unblur_background() {
-	$('#main_bg').fadeTo("fast", 1);
-	$('#main_bg_blur').fadeTo("slow", 0);
+	if (is_showing_real_blur()) {
+		$('#main_bg').fadeTo("fast", 1);
+		$('#main_bg_blur').fadeTo("slow", 0);
+	} else {
+		$('#main_bg_dummy').fadeTo("fast", 1);
+		$('#main_bg_blur_dummy').fadeTo("slow", 0);
+	}
 }
 
 function show_block(block_name) {
@@ -53,8 +74,12 @@ function update_block(block_name) {
 	}
 }
 
+function is_clear_state() {
+	return $('#main_bg').css('opacity') == 1 || $('#main_bg_dummy').css('opacity') == 1;
+}
+
 function about_action() {
-	if ($('#main_bg').css("opacity") == 1) {
+	if (is_clear_state()) {
 		blur_background();
 	}
 
@@ -62,9 +87,74 @@ function about_action() {
 }
 
 function projects_action() {
-	if ($('#main_bg').css("opacity") == 1) {
+	if (is_clear_state()) {
 		blur_background();
 	}
 
 	update_block("#projects_block");
+}
+
+
+function is_showing_real_clear() {
+	return $('#main_bg').css('opacity') == 1;
+}
+
+function is_showing_real_blur() {
+	return $('#main_bg_blur').css('opacity') == 1;
+}
+
+function switch_effect(new_bg, old_bg, new_bg_path) {
+	// Prepare new bg
+	$(new_bg).css('opacity', 0);
+	$(new_bg).css('background-image', new_bg_path);
+	
+	// Show switching process
+	$(old_bg).fadeTo("slow", 0);
+	$(new_bg).fadeTo("slow", 1);
+}
+
+function update_bg(bg, new_bg_path) {
+	$(bg).css('background-image', new_bg_path);
+}
+
+function get_new_bg() {
+	var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
+	return bg;
+}
+
+function is_real_state() {
+	return $('#main_bg').css('opacity') == 1 || $('#main_bg_blur').css('opacity') == 1;
+}
+
+function change_background() {
+
+	// Get new bg image
+	var bg = get_new_bg();
+	var new_clear_path = 'url(images/bg/' + bg['clear'] + ')';
+	var new_blur_path = 'url(images/bg/' + bg['blur'] + ')';
+
+	var new_bg_clear;
+	var old_bg_clear;
+	var new_bg_blur;
+	var old_bg_blur;
+
+	if (is_real_state()) {
+		new_bg_clear = '#main_bg_dummy';
+		old_bg_clear = '#main_bg';
+		new_bg_blur = '#main_bg_blur_dummy';
+		old_bg_blur = '#main_bg_blur';
+	} else {
+		new_bg_clear = '#main_bg';
+		old_bg_clear = '#main_bg_dummy';
+		new_bg_blur = '#main_bg_blur';
+		old_bg_blur = '#main_bg_blur_dummy';
+	}
+
+	if (is_clear_state()) {
+		switch_effect(new_bg_clear, old_bg_clear, new_clear_path);
+		update_bg(new_bg_blur, new_blur_path);
+	} else {
+		switch_effect(new_bg_blur, old_bg_blur, new_blur_path);
+		update_bg(new_bg_clear, new_clear_path);
+	}
 }

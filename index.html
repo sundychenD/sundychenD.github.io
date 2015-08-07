@@ -14,10 +14,16 @@
     	NProgress.start();
     </script>
     <!-- This is the blured image -->
-    <div class="uk-cover-background main_bg_blur" id="main_bg_blur"></div>
+    <div class="uk-cover-background main_bg" id="main_bg_blur"></div>
+
+    <!-- This is the blured image -->
+    <div class="uk-cover-background main_bg" id="main_bg_blur_dummy"></div>
     
     <!-- This is the unblured image -->
     <div class="uk-cover-background main_bg" id="main_bg"></div>
+
+    <!-- This is the blured image -->
+    <div class="uk-cover-background main_bg" id="main_bg_dummy"></div>
     
     <!-- This is the About info block -->
     <div class="uk-grid uk-width-large-1-1 info_block" id="about_block">
@@ -119,7 +125,7 @@
 			   	<h2 class="navbar_title_pop"><a>Home</a></h2></div>
 		    <div class="uk-modal-close" id="about_button" onclick="about_action()">
 			   	<h2 class="navbar_title_pop"><a>About</a></h2></div>
-		    <div class="uk-modal-close" id="projects_button" onclick="projects_action()">
+		    <div class="uk-modal-close" id="projects_button" onclick="projectsction()">
 			   	<h2 class="navbar_title_pop"><a>Projects</a></h2></div>
 		    <div class="uk-modal-close" id="resume_button">
 		   		<h2 class="navbar_title_pop"><a href="files/chendi_cv.pdf" target="_blank">Resume</a></h2></div>
@@ -128,8 +134,15 @@
 	    </div>
 	</div>
 
+	<!-- Click to switch background -->
+	<div class="bottom_bg_click uk-grid">
+		<div class="uk-width-2-3 uk-container-center" onclick="change_background()">
+			<i class="uk-icon-rotate-right"></i>
+		</div>
+	</div>
+
 	<!-- This is the bottom navbar -->
-    <div class="uk-grid uk-width-large-1-1 bottom_navbar uk-grid-collapse ">
+    <div class="uk-grid uk-width-large-1-1 bottom_navbar uk-grid-collapse">
 		<div class="uk-width-large-1-6 uk-visible-large">
 	    	<div class="uk-animation-hover uk-animation-fade" id="home_button" onclick="home_action()">
 		   		<h1 class="navbar_title"><a>Home</a></h1>
@@ -162,7 +175,7 @@
 	    	<h1 class="navbar_title">Chen Di</h1>
 	    </div>
 	</div>
-
+	<script type="text/javascript" src="js/main_page.js"></script>
     <script type="text/javascript">
     	$(document).ready(function(){
     		// Hide about and project block
@@ -170,30 +183,16 @@
 		    $("#projects_block").hide();
 
 		    // Retrieve random background image
-		    var bgArray = [{'clear': 'Torii.jpg', 'blur': 'Torii-blur.jpg'}, 
-		    			   {'clear': 'Kiyomizu.jpg', 'blur': 'Kiyomizu-blur.jpg'}, 
-		    			   {'clear': 'Fushimi.jpg', 'blur': 'Fushimi-blur.jpg'}, 
-		    			   {'clear': 'Train_01.jpg', 'blur': 'Train_01-blur.jpg'},
-		    			   {'clear': 'Brunei.jpg', 'blur': 'Brunei-blur.jpg'}, 
-		    			   {'clear': 'Skytree_cloud.jpg', 'blur': 'Skytree_cloud-blur.jpg'}, 
-		    			   {'clear': 'NY_01.jpg', 'blur': 'NY_01-blur.jpg'}, 
-		    			   {'clear': 'Garden_01.jpg', 'blur': 'Garden_01-blur.jpg'},
-		    			   {'clear': 'SF_sea.jpg', 'blur': 'SF_sea-blur.jpg'}, 
-		    			   {'clear': 'Garden_02.jpg', 'blur': 'Garden_02-blur.jpg'}, 
-		    			   {'clear': 'SF_street.jpg', 'blur': 'SF_street-blur.jpg'},
-		    			   {'clear': 'UCB_Library.jpg', 'blur': 'UCB_Library-blur.jpg'}];
-
 		    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
 			var clear_path = 'url(images/bg/' + bg['clear'] + ')';
 			var blur_path = 'url(images/bg/' + bg['blur'] + ')';
 
-			$('.main_bg').css('background-image', clear_path);
-			$('.main_bg_blur').css('background-image', blur_path);
+			$('#main_bg').css('background-image', clear_path);
+			$('#main_bg_dummy').css('background-image', clear_path);
+			$('#main_bg_blur').css('background-image', blur_path);
+			$('#main_bg_blur_dummy').css('background-image', blur_path);
+			NProgress.done();
 		});
-    </script>
-    <script type="text/javascript" src="js/main_page.js"></script>
-    <script type="text/javascript">
-    	NProgress.done();
     </script>
     </body>
 </html>
