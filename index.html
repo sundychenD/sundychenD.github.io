@@ -135,9 +135,10 @@
 	</div>
 
 	<!-- Click to switch background -->
-	<div class="bottom_bg_click uk-grid">
-		<div class="uk-width-2-3 uk-container-center" onclick="change_background()">
-			<i class="uk-icon-rotate-right"></i>
+	<div class="bottom_bg_click uk-grid uk-width-large-1-1">
+		<div class="uk-animation-hover uk-container-center">
+			<div class="switch_icon uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-rotate-right" onclick="change_background()">
+			</div>
 		</div>
 	</div>
 
@@ -168,8 +169,10 @@
 		   		<h1 class="navbar_title"><a href="https://github.com/sundychenD/StudyNotes" target="_blank">Blog</a></h1>
 		    </div>
 	    </div>
-	    <div class="uk-width-large-1-6 uk-visible-large">
-	    	<h1 class="navbar_title">Chen Di</h1>
+	    <div class="uk-width-large-1-6 uk-visible-large" onclick="change_background()">
+	    	<div class="uk-animation-hover uk-animation-shake">
+	    		<h1 class="navbar_title"><a>Chen Di</a></h1>
+	    	</div>
 	    </div>
 	    <div class="uk-width-small-1-1 uk-hidden-large" data-uk-modal="{target:'#pop_up_nav', center:true}">
 	    	<h1 class="navbar_title">Chen Di</h1>
