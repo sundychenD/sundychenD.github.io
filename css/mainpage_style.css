@@ -75,6 +75,7 @@ div {
 .info_block {
     margin-top: 35px;
     position: absolute;
+    margin-bottom: 6%;
     opacity: 0;
 }
 
@@ -90,4 +91,8 @@ div {
 .switch_icon {
     padding-top: 5px;
     margin-left: 65%;
+}
+
+.text_style {
+    color: black;
 }

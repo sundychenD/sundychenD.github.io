@@ -117,9 +117,21 @@ function update_bg(bg, new_bg_path) {
 	$(bg).css('background-image', new_bg_path);
 }
 
+function get_cur_bg_url() {
+	if (is_real_state()) {
+		return $("#main_bg").css('background-image');
+	} else {
+		return $("#main_bg_dummy").css('background-image');
+	}
+}
+
 function get_new_bg() {
-	var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-	return bg;
+	var cur_bg_clear_url = get_cur_bg_url();
+	var new_bg_obj = bgArray[Math.floor(Math.random() * bgArray.length)];
+	while (cur_bg_clear_url.indexOf(new_bg_obj['clear']) != -1) {
+		new_bg_obj = bgArray[Math.floor(Math.random() * bgArray.length)];
+	}
+	return new_bg_obj;
 }
 
 function is_real_state() {
