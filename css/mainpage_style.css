@@ -12,6 +12,10 @@ div {
     opacity: 0.8;
 }
 
+.profile_title {
+    color: white;
+}
+
 .main_bg {
     position:fixed;
     padding:0;
