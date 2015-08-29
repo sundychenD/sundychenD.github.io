@@ -92,9 +92,12 @@ div {
     opacity: 0.7;
 }
 
-.switch_icon {
+.effect_menu {
     padding-top: 5px;
-    margin-left: 65%;
+    padding-left: 11px;
+    background-color: white;
+    opacity: 70;
+    border-radius: 5px;
 }
 
 .text_style {

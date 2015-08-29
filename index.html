@@ -173,10 +173,25 @@
 	    </div>
 	</div>
 
-	<!-- Click to switch background -->
-	<div class="bottom_bg_click uk-grid uk-width-large-1-1">
-		<div class="uk-animation-hover uk-container-center">
-			<div class="switch_icon uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-rotate-right" onclick="change_background()">
+	<!-- Top special effect menu -->
+	<div class="bottom_bg_click uk-grid uk-width-large-1-1 uk-container-center">
+		<div class="uk-width-1-6 effect_menu uk-container-center">
+			<div class="uk-grid">
+				<div class="uk-width-1-3">
+					<!-- Click to switch background -->
+					<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-rotate-right" onclick="change_background()" title="Change Background">
+					</i>
+				</div>
+				<div class="uk-width-1-3">
+					<!-- Click to unblur -->
+					<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-adjust" onclick="home_action()" title="Unblur">
+					</i>
+				</div>
+				<div class="uk-width-1-3">
+					<!-- Click to enter full screen -->
+					<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-desktop" onclick="wholePageFullScreen()" title="Full Screen">
+					</i>
+				</div>
 			</div>
 		</div>
 	</div>
