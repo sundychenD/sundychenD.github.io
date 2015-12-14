@@ -5,18 +5,20 @@ $('#home_button').click(function() {
 	$('#main_container').css('background-image', blured_b_img);
 });
 */
-var bgArray = [{'clear': 'Torii.jpg', 'blur': 'Torii-blur.jpg'}, 
-			   {'clear': 'Kiyomizu.jpg', 'blur': 'Kiyomizu-blur.jpg'}, 
-			   {'clear': 'Fushimi.jpg', 'blur': 'Fushimi-blur.jpg'}, 
-			   {'clear': 'Train_01.jpg', 'blur': 'Train_01-blur.jpg'},
-			   {'clear': 'Brunei.jpg', 'blur': 'Brunei-blur.jpg'}, 
-			   {'clear': 'Skytree_cloud.jpg', 'blur': 'Skytree_cloud-blur.jpg'}, 
-			   {'clear': 'NY_01.jpg', 'blur': 'NY_01-blur.jpg'}, 
-			   {'clear': 'Garden_01.jpg', 'blur': 'Garden_01-blur.jpg'},
-			   {'clear': 'SF_sea.jpg', 'blur': 'SF_sea-blur.jpg'}, 
-			   {'clear': 'Garden_02.jpg', 'blur': 'Garden_02-blur.jpg'}, 
-			   {'clear': 'SF_street.jpg', 'blur': 'SF_street-blur.jpg'},
-			   {'clear': 'UCB_Library.jpg', 'blur': 'UCB_Library-blur.jpg'}];
+var bgArray = [{'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Torii.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Torii-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kiyomizu.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kiyomizu-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Fushimi.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Fushimi-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Train_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Train_01-blur.jpg'},
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Brunei.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Brunei-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Skytree_cloud.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Skytree_cloud-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/NY_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/NY_01-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_01-blur.jpg'},
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_sea.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_sea-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_02.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_02-blur.jpg'}, 
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_street.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_street-blur.jpg'},
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/UCB_Library.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/UCB_Library-blur.jpg'},
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_01-blur.jpg'},
+			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_02.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_02-blur.jpg'}];
 
 function blur_background() {
 	if (is_showing_real_clear()) {
@@ -142,8 +144,8 @@ function change_background() {
 
 	// Get new bg image
 	var bg = get_new_bg();
-	var new_clear_path = 'url(images/bg/' + bg['clear'] + ')';
-	var new_blur_path = 'url(images/bg/' + bg['blur'] + ')';
+	var new_clear_path = 'url(' + bg['clear'] + ')';
+	var new_blur_path = 'url(' + bg['blur'] + ')';
 
 	var new_bg_clear;
 	var old_bg_clear;

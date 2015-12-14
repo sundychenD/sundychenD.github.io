@@ -362,8 +362,8 @@
 
 		    // Retrieve random background image
 		    var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-			var clear_path = 'url(images/bg/' + bg['clear'] + ')';
-			var blur_path = 'url(images/bg/' + bg['blur'] + ')';
+			var clear_path = 'url(' + bg['clear'] + ')';
+			var blur_path = 'url(' + bg['blur'] + ')';
 
 			$('#main_bg').css('background-image', clear_path);
 			$('#main_bg_dummy').css('background-image', clear_path);
