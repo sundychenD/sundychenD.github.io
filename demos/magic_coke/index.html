@@ -1,0 +1,298 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CS3240 Assignment 2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/d3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <style>
+    .node {
+      cursor: pointer;
+    }
+
+    .node circle {
+      fill: #fff;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+    }
+
+    .node text {
+      font: 10px sans-serif;
+    }
+
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 1.5px;
+    }
+
+    svg,
+    body,
+    div {
+      margin: 0;
+      padding: 0;
+      font-family: "HelveticaNeue-Light";
+    }
+
+    .main-title {
+      font-family: 'Lobster', cursive;
+      font-weight: 400;
+      font-size: 80px;
+      color: #990000;
+      margin-left: 200px;
+    }
+
+    .main-header {
+      /*background-image: url(image/coke.jpg);*/
+      background-color: white;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+
+    .line-break {
+      height: 5px;
+      background-color: #990000;
+    }
+
+    .analyse {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+
+    .analyse-variable {
+      width: 836px;
+      margin: auto;
+      padding: 0;
+    }
+
+    .picture {
+      width: 480px;
+      height: 350px;
+      display: inline-block;
+    }
+
+    .sub-header {
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Lobster', cursive;
+      font-weight: 400;
+      font-size: 40px;
+      color: #990000;
+    }
+
+    .info-block {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    ul {
+      list-style-type: none;
+      list-style-position: outside;
+      padding: 10px;
+    }
+
+    .pepsi {
+      color: rgb(8, 74, 145)
+    }
+
+    .coca-cola {
+      color: rgb(224, 38, 56)
+    }
+
+    .brand {
+      font-family: 'Lobster', cursive;
+      font-size: 25px;
+    }
+
+    .footer {
+      height: 250px;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-image: url(image/wave.png);
+      background-size: cover;
+      color: white;
+    }
+
+    .footer-note {
+      padding-top: 50px;
+      padding-left: 180px;
+      font-family: 'Lobster', cursive;
+      font-size: 40px;
+    }
+
+    .variable-block {
+      margin: 0px;
+      padding: 5px;
+      vertical-align: top;
+      display: inline-block;
+      width: 836px;
+    }
+
+    .left {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .right {
+      display: inline-block;
+      text-align: right;
+    }
+
+    .info-header {
+      padding: 0px;
+      padding-top: 80px;
+      margin: 0px;
+      font-family: 'Lobster', cursive;
+      font-weight: 400;
+      font-size: 40px;
+      color: #990000;
+      width: 370px;
+    }
+
+    .text-block {
+      padding-top: 80px;
+      vertical-align: top;
+      display: inline-block;
+      width: 293px;
+      font-family: 'Lobster', cursive;
+      font-weight: 400;
+      font-size: 25px;
+    }
+
+    .text-block-left {
+      text-align: right;
+      padding-right: 147px;
+    }
+
+    .text-block-right {
+      text-align: left;
+      padding-left: 147px;
+    }
+
+    .text-block-style {
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+    }
+
+    .info-block-short {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .info-block-short-left {
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 90px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-header">
+    <h1 class="main-title">Magic Coke</h1>
+  </div>
+  <div class="line-break"></div>
+  <div id="svg-board"></div>
+  <div class="line-break"></div>
+  <br><br>
+  <div class="analyse">
+    <div class="sub-header">Hypothesis: (Magic Coke) is better than (Pepsi) and (coca-cola) if drink it (every meal) in (slim weight) and (taste)</div>
+  </div>
+  <div class="analyse">
+    <img class="picture" src="image/bottles.png">
+    <div class="info-block">
+      <div class="sub-header">
+        Three coke were tested
+      </div>
+      <div>
+        <ul>
+          <li class="brand">
+            Pepsi
+          </li>
+          <li class="brand">
+            Coca Cola
+          </li>
+          <li class="brand">
+            Magic Coke
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="analyse-variable">
+    <div class="variable-block">
+      <div class="info-block-short-left">
+        <div class="info-header ">
+          Independent Varaible
+        </div>
+        <div class="text-block ">
+          IV1-Type of coke: Pepsi, Coca Cola, Magic Coke<br><br>
+          IV2-Meal time: Breakfast, Lunch, Dinner
+        </div>
+      </div>
+      <div class="info-block-short">
+        <div class="info-header ">
+          Dependent Varaible
+        </div>
+        <div class="text-block ">
+          DV1: Slim Weight<br>
+          DV2: Taste Scale
+        </div>
+      </div>
+    </div>
+    <div class="variable-block">
+      <div class="info-block-short-left">
+        <div class="info-header">
+          Controlled Varaible
+        </div>
+        <div class="text-block">
+          CV1: Foot Type<br>
+          CV2: Personal Health
+        </div>
+      </div>
+      <div class="info-block-short">
+        <div class="info-header">
+          Random Varaible
+        </div>
+        <div class="text-block">
+          RV1: Age<br>
+          RV2: Gender
+        </div>
+      </div>
+    </div>
+    <div class="variable-block">
+      <div class="info-block-short-left">
+        <div class="info-header">
+          Design Types
+        </div>
+        <div class="text-block">
+          <div class="text-block-style">Between Subject</div>
+          <div class="text-block-style">Within Subject</div>
+        </div>
+      </div>
+      <div class="info-block-short">
+        <div class="info-header">
+          Experimental Conditions
+        </div>
+        <div class="text-block">
+          <div class="text-block-style">IV1DV1: Pepsi x Breakfast, <br>IV1DV2: Pepsi x Lunch, <br>IV1DV3: Pepsi x Dinner</div><br>
+          <div class="text-block-style">IV2DV1: Coca Cola x Breakfast, <br>IV2DV2: Coca Cola x Lunch,<br> IV2DV3: Coca Cola x Dinner</div><br>
+          <div class="text-block-style">IV3DV1: Magic Coke x Breakfast, <br>IVD3V2: Magic Coke x Lunch, <br>IV3DV3: Magic Coke x Dinner</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-note">"Opens Magic"</div>
+  </div>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
