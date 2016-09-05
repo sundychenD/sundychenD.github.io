@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Partstoob</title>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Partstoob</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+  <div class="container-fluid">
+
+    <div class="row divrow">
+      <div class="row-content main-display">
+        <div class="main-title">
+          <p>Partstoob</p>
+        </div>
+        <div class="main-subtitle">
+          <p>Your very best CSS Framework</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row divrow" id="about">
+      <div class="row-content">
+        <div class="col-md-4 column-section">
+
+          <h1>
+            <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+          </h1>
+
+          <h2>Cloud Support</h2>
+          <p>Partstoob provides official CDN supports to all its user. We have our server clusters locating at 32 countries and 112 hotpots around the world, it gives you fast loading speed for CSS and Javascript content which gives great boosts to your site.</p>
+        </div>
+        <div class="col-md-4 column-section">
+          <h1>
+            <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
+          </h1>
+
+          <h2>Multi-browser Compatible</h2>
+
+          <p>Partstoob is developed with full backward supported APIs, it is compatiple with all modern browsers including Chrome, Firefox, Safari, Microsoft Edge and IE (IE6-IE12). When building your front end components there is no need to worry about cross browser compatibility.</p>
+        </div>
+        <div class="col-md-4 column-section">
+
+          <h1>
+            <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+          </h1>
+
+          <h2>Modularity Design</h2>
+          <p>Partstoob adapts the adavatage of many existing front-end framework including Bootstraps, UI-Kits. It provide a fully responsive Grid System which makes your site looks great on both desktop and mobile platforms.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row divrow parallex" id="usage">
+      <img class="bg index0">
+      <div class="jumbotron">
+        <h1>Partstoob Usage</h1>
+        <p class="lead">+ You can achieve parallel effects like this section</p>
+      </div>
+    </div>
+
+
+    <div class="row divrow parallex" id="usage">
+      <img class="bg index1">
+      <div class="jumbotron right-jumbotron">
+        <h1>Partstoob Usage</h1>
+        <p class="lead">+ You can achieve parallel effects like this section</p>
+      </div>
+    </div>
+
+    <div class="row divrow parallex" id="usage">
+      <img class="bg index2">
+      <div class="jumbotron">
+        <h1>Partstoob Usage</h1>
+        <p class="lead">+ You can achieve parallel effects like this section</p>
+      </div>
+    </div>
+
+
+    <div class="row divrow feedback" id="feedback">
+      <div class="row-content">
+        <div class="feedback-list">
+          <ul class="list-group" id="list-group">
+            <h1>Feedbacks:</h1>
+            <li class="list-group-item">Nice Work!</li>
+            <li class="list-group-item">I like this!</li>
+          </ul>
+        </div>
+        <hr>
+
+        <div id="emailAlert"></div>
+        <div id="commentAlert"></div>
+
+        <form class="feedback-form" id="feedback-form">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <input type="text" class="form-control" id="comment" name="comment" placeholder="Comment">
+          </div>
+          <div><a class="btn btn-info" onclick="addComment()" data-dismiss="alert">Submit</a></div>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row divrow" id="contact">
+      <div class="row-content">
+
+        <div class="col-lg-4 col-md-offset-4 contact">
+          <img class="img-circle" src="image/profile.jpg" width="140" height="140">
+          <h2>Chen Di</h2>
+          <p>Lead developer and designer.</p>
+          <p class="bottom-p">
+            Mail Me: <a href="mailto:sundychen1018@gmail.com?subject=from Foodi" style="text-decoration: none;">  sundychen1018@gmail.com</a>
+            <br>
+          </p>
+          <br>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center footer">
+        <h4>The End</h4>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var commentAlert = `<div class="alert alert-danger alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Warning!</strong> Please complete the comment.
+        </div>`;
+    var emailAlert = `<div class="alert alert-danger alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Warning!</strong> Please complete the email.
+        </div>`;
+
+    function formFeedbackItem(content) {
+      return '<li class="list-group-item">' + content + '</li>';
+    }
+
+    function addComment() {
+      var feedbackData = $('#feedback-form').serializeArray();
+      if (feedbackData[0]['value'].length == 0) {
+        $('#emailAlert').html(emailAlert);
+      } else if (feedbackData[1]['value'].length == 0) {
+        $('#commentAlert').html(commentAlert);
+      } else {
+        $('#emailAlert').html('');
+        $('#commentAlert').html('');
+        var feedback = feedbackData[1]['value'];
+        var feedbackItem = formFeedbackItem(feedback);
+        $('#list-group').append(feedbackItem);
+      }
+    }
+
+    function parallax() {
+      var scrolled = $(window).scrollTop();
+      $('.index0').css('top', (200 - scrolled * 0.25) + 'px');
+      $('.index1').css('top', (-scrolled * 0.15) + 'px');
+      $('.index2').css('top', (200 - scrolled * 0.3) + 'px');
+    }
+
+    $(window).on("scroll", function (e) {
+      parallax();
+    });
+  </script>
+</body>
+
+</html>

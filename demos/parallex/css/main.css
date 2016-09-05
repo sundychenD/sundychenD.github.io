@@ -1,0 +1,95 @@
+.bg {
+  background-size: cover;
+  position: absolute;
+  width: 101%;
+  left: -1px;
+  margin: 0px;
+  height: 940px;
+  /*same height as jumbotron */
+}
+
+.parallex {
+  overflow: hidden;
+}
+
+.index0 {
+  background: url('../image/0.jpg') no-repeat center center;
+  z-index: -1;
+}
+
+.index1 {
+  background: url('../image/1.jpg') no-repeat center center;
+  z-index: -2;
+}
+
+.index2 {
+  background: url('../image/2.jpg') no-repeat center center;
+  z-index: -3;
+}
+
+.jumbotron {
+  height: 400px;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background: transparent;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.right-jumbotron {
+  text-align: right;
+}
+
+.divrow {
+  position: relative;
+}
+
+.row-content {
+  padding-top: 20px;
+  margin: 0px;
+  background-color: white;
+}
+
+.main-display {
+  background: url('../image/tokyo.jpg') no-repeat center center;
+  background-size: cover;
+  margin: 0px;
+  text-align: center;
+  height: 800px;
+  width: 100%;
+}
+
+.main-title {
+  font-family: Lobster;
+  font-size: 100px;
+  margin-top: 200px;
+}
+
+.main-subtitle {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.column-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.col-md-4 {
+  background-color: white;
+}
+
+.feedback {
+  background-color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.footer {
+  background-color: #222;
+}
