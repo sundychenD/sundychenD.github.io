@@ -3,16 +3,8 @@
 	src: url(../fonts/fontawesome-webfont.woff);
 }
 
-div {
-	font-family: fontawesome-webfont;
-}
-
 .uk-modal-dialog {
 	opacity: 0.8;
-}
-
-.profile_title {
-	color: white;
 }
 
 .main_bg {
@@ -112,5 +104,28 @@ div {
 }
 
 .uk-article-title {
+	color: #808080;
+}
+
+.icon-block {
+	width: 80%;
+	margin: auto;
+	text-align: center;
 	color: white;
+}
+
+h1,
+.uk-article-title,
+.uk-text-large,
+.uk-article-lead {
+	font-weight: 300;
+}
+
+.focus-area-image {
+	width: 50%;
+	height: 50%;
+}
+
+.journey-image {
+	width: 70%;
 }
