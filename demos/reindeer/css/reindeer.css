@@ -1,0 +1,62 @@
+#logo {
+	background-color: #ffb526;
+}
+
+#problem {
+	background-color: #2a4265;
+	color: white;
+}
+
+#solution {
+	background-color: #ffffff;
+}
+
+#prototype {
+	background-color: #213045;
+}
+
+#final {
+	background-color: #000000;
+}
+
+.logo {
+	text-shadow: 4px 3px #e69900;
+}
+
+.logo-image {
+	position: absolute;
+	top: 3%;
+	left: 0px;
+	-webkit-animation-name: moveReindeer;
+	-webkit-animation-duration: 2s;
+}
+
+@media screen and (min-width: 100px) {
+	.logo-image {
+		width: 100px;
+		height: 150px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.logo-image {
+		width: 300px;
+		height: 350px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.logo-image {
+		width: 500px;
+		height: 600px;
+	}
+}
+
+@-webkit-keyframes moveReindeer {
+	from {
+		left: -12%;
+	}
+	to {
+		left: 0px;
+	}
+}

@@ -1,0 +1,78 @@
+html,
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.full-screen-height {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.project-tag {
+	margin-top: 15%;
+}
+
+.transparent {
+	opacity: 0;
+}
+
+#problem .subtitle {
+	font-size: 30px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#problem .date {
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+#problem .subparagraph {
+	font-size: 20px;
+	padding-bottom: 100px;
+}
+
+#logo {
+	text-align: center;
+}
+
+@media screen and (min-width: 100px) {
+	.full-screen-height {
+		height: 300px;
+	}
+	.logo {
+		padding-top: 25%;
+		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.full-screen-height {
+		height: 500px;
+	}
+	.logo {
+		padding-top: 20%;
+		font-size: 60px;
+	}
+	.project-tag {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.full-screen-height {
+		height: 680px;
+	}
+	.logo {
+		padding-top: 20%;
+		font-size: 100px;
+	}
+	.project-tag {
+		font-size: 30px;
+	}
+}
