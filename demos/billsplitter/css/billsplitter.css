@@ -1,0 +1,99 @@
+#logo {
+	position: relative;
+	background-color: #2AB55A;
+	color: white;
+}
+
+#problem {
+	background-color: #ffffff;
+	background-image: url(../images/proto-bg.png);
+	color: black;
+}
+
+#solution-1 {
+	background-color: #1EB1EC;
+}
+
+#solution-2 {
+	position: relative;
+	background-color: #262626;
+	color: white;
+}
+
+#solution-3 {
+	background-color: #ffffff;
+}
+
+#final {
+	background-color: #000000;
+}
+
+.logo {
+	text-shadow: 4px 3px #248f24;
+}
+
+.logo-image {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	-webkit-animation-name: moveSplitter;
+	-webkit-animation-duration: 2s;
+}
+
+.image-tags {
+	position: absolute;
+	color: #262626;
+	opacity: 0.5;
+	font-size: 20px;
+	-webkit-transition: .5s;
+}
+
+.image-tags:hover {
+	opacity: 1;
+}
+
+.image-tags-1 {
+	right: 13%;
+	top: 18%;
+}
+
+.image-tags-2 {
+	right: 35%;
+	top: 34%;
+}
+
+.section-text li {
+	padding-bottom: 2%;
+}
+
+@media screen and (min-width: 100px) {
+	.logo-image {
+		width: 200px;
+		height: 130px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.logo-image {
+		width: 400px;
+		height: 290px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.logo-image {
+		width: 600px;
+		height: 400px;
+	}
+}
+
+@-webkit-keyframes moveSplitter {
+	from {
+		right: -12%;
+		bottom: -12%;
+	}
+	to {
+		right: 0;
+		bottom: 0;
+	}
+}
