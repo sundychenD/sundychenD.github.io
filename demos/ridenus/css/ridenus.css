@@ -1,0 +1,109 @@
+#logo {
+	position: relative;
+	background-color: #F68438;
+	color: white;
+}
+
+#problem {
+	background-color: #ffffff;
+	color: black;
+}
+
+#solution-1 {
+	background-color: #262626;
+	background-image: url(../images/e-scooter.jpg);
+	background-size: cover;
+	color: white;
+}
+
+#solution-2 {
+	position: relative;
+	background-color: #262626;
+	color: white;
+}
+
+#solution-3 {
+	background-color: #efefef;
+}
+
+#solution-4 {
+	background-color: #ffffff;
+}
+
+#final {
+	background-color: #000000;
+}
+
+.logo {
+	text-shadow: 4px 3px #cc6600;
+}
+
+.logo-image {
+	position: absolute;
+	left: 47%;
+	bottom: 20%;
+	-webkit-animation-name: moveSplitter;
+	-webkit-animation-duration: 2s;
+}
+
+.image-tags {
+	position: absolute;
+	color: #262626;
+	opacity: 0.5;
+	font-size: 20px;
+	-webkit-transition: .5s;
+}
+
+.image-tags:hover {
+	opacity: 1;
+}
+
+.image-tags-1 {
+	right: 13%;
+	top: 18%;
+}
+
+.image-tags-2 {
+	right: 35%;
+	top: 34%;
+}
+
+.section-text li {
+	padding-bottom: 2%;
+}
+
+.green-color {
+	color: #00e600;
+}
+
+@media screen and (min-width: 100px) {
+	.logo-image {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.logo-image {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.logo-image {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+@-webkit-keyframes moveSplitter {
+	from {
+		left: -10%;
+		bottom: 20%;
+	}
+	to {
+		left: 47%;
+		bottom: 20%;
+	}
+}
