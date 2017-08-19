@@ -5,6 +5,7 @@ $(window).scroll(function () {
 	var solution_2_TriggerPoint = $('#solution-2').offset().top - 300;
 	var solution_3_TriggerPoint = $('#solution-3').offset().top - 300;
 	var solution_4_TriggerPoint = $('#solution-4').offset().top - 300;
+	var solution_5_TriggerPoint = $('#solution-5').offset().top - 300;
 
 	if (scrollPos > problemTriggerPoint) {
 		['#problem-paragraph-1', '#problem-paragraph-2', '#problem-paragraph-3'].forEach(addFadeInUpAnimation)
@@ -24,6 +25,10 @@ $(window).scroll(function () {
 
 	if (scrollPos > solution_4_TriggerPoint) {
 		['.solution-4-img'].forEach(addFadeInUpAnimation)
+	}
+
+	if (scrollPos > solution_5_TriggerPoint) {
+		['.solution-5-img'].forEach(addFadeInUpAnimation)
 	}
 });
 
