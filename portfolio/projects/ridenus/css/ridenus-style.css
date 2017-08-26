@@ -1,0 +1,87 @@
+html, body, div {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+	font-size: 3.5em;
+	line-height: 1.5em;
+}
+
+.white-font {
+	color: white;
+}
+
+.black-font {
+	color: black;
+}
+
+.section-content {
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+#cover {
+	background-image: url(./../images/Cover.png);
+}
+
+#section-1 {
+	background-image: url(./../images/Section-1.png);
+}
+
+#section-2 {
+	background-image: url(./../images/Section-2.png);
+}
+
+#section-3 {
+	background-image: url(./../images/Section-3.png);
+}
+
+#section-4 {
+	position: relative;
+}
+
+#section-4 > .parallax-bg {
+	z-index: -3;
+	position: absolute;
+}
+
+#section-5 {
+	z-index: -2;
+	background-color: #5E6B72;
+	position: relative;
+}
+
+#section-5 > .parallax-bg {
+	position: absolute;
+}
+
+#section-6 {
+	background-color: #17C37B;
+	position: relative;
+}
+
+#section-6 .black-bar {
+	background-color: black;
+}
+
+
+
+.section-padding-medium-top {
+	padding-top: 10%;
+}
+
+.section-padding-35-left {
+	padding-left: 35px;
+}
+
+.section-padding-small-top {
+	padding-top: 2%;
+}
+
+
+.floating-black-box {
+	margin-top: 5%;
+	padding: 5%;
+	border-style: solid;
+	border-width: 1px;
+}
