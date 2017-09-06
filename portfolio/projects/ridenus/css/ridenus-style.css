@@ -20,47 +20,53 @@ html, body, div {
 	line-height: 1.2em;
 }
 
+hr {
+	margin: 0px;
+	padding: 0px;
+}
+
 #cover {
 	background-image: url(./../images/Cover.png);
 }
 
 #section-1 {
-	background-image: url(./../images/Section-1.png);
+	background-image: url(./../images/Section_1.png);
 }
 
 #section-2 {
-	background-image: url(./../images/Section-2.png);
+	background-image: url(./../images/Section_2.png);
 }
 
 #section-3 {
-	background-image: url(./../images/Section-3.png);
+	background-image: url(./../images/Section_3.png);
 }
 
 #section-4 {
-	position: relative;
-}
-
-#section-4 > .parallax-bg {
-	z-index: -3;
-	position: absolute;
+	background-image: url(./../images/Section_4.png);
 }
 
 #section-5 {
-	z-index: -2;
-	background-color: #5E6B72;
-	position: relative;
-}
-
-#section-5 > .parallax-bg {
-	position: absolute;
+	background-image: url(./../images/Section_5.png);
 }
 
 #section-6 {
+	background-image: url(./../images/Section_6.png);
+}
+
+#section-7 {
+	background-image: url(./../images/Section_7.png);
+}
+
+#section-8 {
+	background-image: url(./../images/Section_8.png);
+}
+
+#section-mis {
 	background-color: #17C37B;
 	position: relative;
 }
 
-#section-6 .black-bar {
+#section-mis .black-bar {
 	background-color: black;
 }
 
