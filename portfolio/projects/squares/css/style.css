@@ -53,3 +53,40 @@ p {
 		margin: 10px 0;
 	 }
 }
+
+/* Role Style
+--- */
+
+html, body, div {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+	text-align: center;
+	font-family: 'HelveticaNeue-Medium';
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.white-font {
+	color: white;
+}
+
+.black-font {
+	color: black;
+}
+
+.section-content {
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+hr {
+	margin: 0px;
+	padding: 0px;
+}
+
+.section-padding-medium-top {
+	padding-top: 10%;
+}
