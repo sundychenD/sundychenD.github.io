@@ -1,608 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html class="uk-height-1-1">
 
 <head>
 	<title>Chen Di</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/uikit.min.css" />
 	<link rel="stylesheet" href="css/mainpage_style.css">
-	<link rel='stylesheet' href='css/nprogress.css' />
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/uikit.min.js"></script>
-	<script src='js/nprogress.js'></script>
 </head>
 
-<body>
-	<script type="text/javascript">
-		NProgress.start();
-	</script>
-	<!-- This is the blured image -->
-	<div class="uk-cover-background main_bg" id="main_bg_blur"></div>
-
-	<!-- This is the blured image -->
-	<div class="uk-cover-background main_bg" id="main_bg_blur_dummy"></div>
-
-	<!-- This is the unblured image -->
-	<div class="uk-cover-background main_bg" id="main_bg"></div>
-
-	<!-- This is the blured image -->
-	<div class="uk-cover-background main_bg" id="main_bg_dummy"></div>
-
-	<!-- This is the About block -->
-	<div class="uk-grid info_block" id="about_block">
-		<div class="uk-width-2-3 uk-container-center">
-			<article class="uk-article">
-
-				<!-- Profile Picture -->
-				<div class="uk-grid">
-					<div class="uk-width-4-5">
-						<h1 class="uk-article-title profile_title">Hi There!</h1>
-					</div>
-
-					<div class="uk-width-1-5">
-						<figure class="uk-border-circle uk-overlay uk-overlay-hover">
-							<img class="uk-border-circle uk-overlay-scale" src="http://7d9l9r.com1.z0.glb.clouddn.com/profile.jpg" width="130" height="130" alt="">
-						</figure>
-					</div>
-				</div>
-
-				<p class="uk-article-meta">
-					Updated on 10 Aug 2017.
+<body class="uk-height-1-1">
+	<div class="uk-grid uk-height-1-1">
+		<!-- Side Bar -->
+		<div id="Side-Bar" class="uk-width-small-3-10">
+			<!-- Profile Title -->
+			<div class="uk-grid">
+				<figure class="uk-border-circle uk-container-center profile-pic">
+					<img class="uk-border-circle" src="images/profile/profile.jpg" width="90" height="90" alt="">
+				</figure>
+				<p class="uk-width-1-1 profile-name">
+					Chen Di
 				</p>
+				<div class="uk-width-8-10 uk-container-center profile-summary">
+					MPS IS @ Cornell University |  Human-Computer Interaction | UX/UI Engineering | Full Stack Development
+				</div>
+			</div>
 
-				<p class="uk-article-lead text_style">
-					I'm an MPS Information Science student studying in Cornell University. <br>
+			<!-- Navigation -->
+			<ul class="uk-nav uk-nav-side nav-bar">
+				<li class="uk-active"id="projects_nav"><a onclick="projects_action()">Projects</a></li>
+			    <li id="snippets_nav"><a onclick="snippets_action()">Code Snippets</a></li>
+			    <li id="about_nav"><a onclick="about_action()">About</a></li>
+			</ul>
 
-					I focus my studies in User Experience Engineering, Web Development and Human-Computer Interaction. <br>
-
-					I obtained my Bachelor's degree in Computer Science in National University of Singapore. <br>
-
-					
-					<br>
-					<a href="files/chendi_resume.pdf " target="_blank ">Resume</a> |
-					<a href="files/chendi_cv.pdf " target="_blank ">CV</a>
-				</p>
-				<br>
-
-				<span class="uk-article-title">Study Focus</span>
-				<hr>
-
-				<!-- Study Focus -->
-				<div class="uk-grid">
-					<div class="uk-width-1-4">
-						<div class="icon-block">
-							<img src="images/intro/HCI.png" class="focus-area-image">
-							<span class="uk-text-large">
-								<br> Human
-								<br> Computer
-								<br> Interaction
-							</span>
-						</div>
+			<!-- Bottom Contact -->
+			<div class="uk-position-bottom uk-grid">
+				<div class="uk-width-3-5 uk-container-center bottom-contact">
+					<div class="bottom-info">
+						Designed & Coded by Chen Di
 					</div>
+					<div>
+						<a href="http://www.linkedin.com/in/sundychendi" target="_blank">
+							<i class="uk-icon-medium uk-icon-linkedin-square icon-black"></i>
+						</a>
 
-					<div class="uk-width-1-4">
-						<div class="icon-block">
-							<img src="images/intro/UX.png" class="focus-area-image">
-							<span class="uk-text-large">
-								<br> User
-								<br> Experience
-							</span>
-						</div>
-					</div>
-
-					<div class="uk-width-1-4">
-						<div class="icon-block">
-							<img src="images/intro/FrontEnd.png" class="focus-area-image">
-							<span class="uk-text-large">
-								<br> Front
-								<br> End
-								<br> Design
-							</span>
-						</div>
-					</div>
-
-					<div class="uk-width-1-4">
-						<div class="icon-block">
-							<img src="images/intro/SE.png" class="focus-area-image">
-							<span class="uk-text-large">
-								<br> Software
-								<br> Engineering
-							</span>
-						</div>
+						<a href="http://github.com/sundychenD" target="_blank">
+							<i class="uk-icon-medium uk-icon-github icon-black"></i>
+						</a>
 					</div>
 				</div>
-				<!-- End of Study Focus -->
-				<br>
-				<br>
-
-				<!-- My Journey -->
-				<span class="uk-article-title">My Journey</span>
-				<hr>
-
-				<div class="uk-grid">
-					<div class="uk-width-1-1">
-						<img src="images/intro/Journey.png" class="journey-image">
-					</div>
-				</div>
-				<!-- End of My Journey -->
-				<br>
-				<br>
-
-				<!-- Contact -->
-				<span class="uk-article-title">Contact</span>
-				<hr>
-
-				<div>
-					<p class="uk-article-lead text_style">
-						sundy.chendi@gmail.com
-						<br> Blog <a href="http://188.166.240.125:3000/jade " target="_blank ">Final Dogma</a>
-
-						<br>
-						<br>
-						<br> Zhihu <a href="http://www.zhihu.com/people/chen-di-37" target="_blank">@陈迪</a>
-
-						<br> Lofter <a href="http://lunadic.lofter.com" target="_blank">lunadic</a>
-					</p>
-				</div>
-				<!-- End of Contact -->
-			</article>
+			</div>
 		</div>
+
+		<!-- Main Display -->
+		<div id="Display-Canvas" class="uk-width-small-7-10">
+			<div id="projects_block" class="info-block">
+				<ul class="uk-grid" data-uk-grid-margin>
+
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/reindeer.jpg" width="600" height="400" alt="RideNUS">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./portfolio/images/peek/ridenus.png" width="600" height="400" alt="RideNUS">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Ride NUS</div>
+                                <div class="project-description">UI/UX Design | User Studies</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+
+                </ul>
+			</div>
+			<div id="snippets_block" class="info-block" style="display: none;">
+				Code Snippets
+			</div>
+			<div id="about_block" class="info-block" style="display: none;">
+				About
+			</div>
+		</div>
+
 	</div>
-
-	<!-- This is the Projects block -->
-	<div class="uk-grid info_block" id="projects_block">
-		<div class="uk-width-2-3 uk-container-center">
-			<article class="uk-article">
-				<h1 class="uk-article-title">Portfolio</h1>
-				<p class="uk-article-meta">
-					Updated on 11 June 2017.
-				</p>
-
-				<!-- HCI & Design Section -->
-				<br>
-				<br>
-				<h1 class="uk-article-title">
-					<i class="uk-icon-pencil"></i> HCI & Design	    
-				</h1>
-				<p class="uk-article-lead text_style">
-					HCI & Design is what I am passionate about, and I believe in the power of design in making technology more accessible to people.
-				</p>
-				<hr class="uk-article-divider">
-
-				<br>
-				<br>
-				<div class="uk-grid text_style">
-
-					<!-- RideNUS -->
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="./portfolio/images/peek/ridenus.png" width="240 " height="180 " alt="Ride NUS">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>Ride NUS</h3>
-								<br> UI/UX Design | User Study | Rapid Prototyping
-							</figcaption>
-							<a class="uk-position-cover " href="./portfolio/projects/ridenus/index.html" target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-2-3">
-						<div class="uk-text-large uk-text-left uk-text-break ">
-							(2016) A mobile app designed for renting scooters around NUS campus, project went through 2 iterations of prototyping & user evaluations. 2016 School of Computing Term Project Showcase 2nd Prize Winner.
-
-							<br>
-							<a href="./portfolio/projects/ridenus/index.html" target="_blank ">
-								Details
-							</a>
-							<br>
-							<a href="demos/ridenus/index.html" target="_blank ">
-								Project Log
-							</a>
-						</div>
-					</div>
-
-					<!-- Reindeer -->
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/Reindeer.jpg" width="240 " height="180 " alt="Reindeer">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>Reindeer</h3>
-								<br> UI Design | Web Development | Design Thinking
-							</figcaption>
-							<a class="uk-position-cover " href="demos/reindeer/index.html" target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-2-3">
-						<div class="uk-text-large uk-text-left uk-text-break ">
-							(2016) A online tutorial application implemented with chat room, synchronized drawing board and file upload function.
-
-							<br>
-							<a href="demos/reindeer/index.html" target="_blank ">
-								Project Log
-							</a>
-						</div>
-					</div>
-
-					<!-- Squares -->
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="./portfolio/images/peek/squares.png" width="240" height="180" alt="Squares">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Squares</h3>
-								<br>2D Visualization | Material Design
-							</figcaption>
-							<a class="uk-position-cover" href="./portfolio/projects/squares/index.html" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-2-3">
-						<div class="uk-text-large uk-text-left uk-text-break ">
-							(2017) A 2D visualization project that transforms real world objects into squares.
-
-							<br>
-							<a href="./portfolio/projects/squares/index.html" target="_blank ">
-								Details
-							</a>
-						</div>
-					</div>
-
-					<!-- Bill Spliter -->
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/BillSplitter.png" width="240 " height="180 " alt="Bill Splitter">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>Bill Splitter</h3>
-								<br> UI Optimization | UI Design
-							</figcaption>
-							<a class="uk-position-cover " href="demos/billsplitter/index.html" target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-2-3">
-						<div class="uk-text-large uk-text-left uk-text-break ">
-							(2016) A interface improvement project aiming to optimize a bill splitting app. CMU-CogTool is used to perform "Keystroke Level Model" (KLM) analysis to evaluate interaction efficiency. Interface efficiency improved from 22 seconds to 8.3 seconds.
-
-							<br>
-							<a href="demos/billsplitter/index.html" target="_blank ">
-								Project Log
-							</a>
-						</div>
-					</div>
-
-				</div>
-				<!-- End of HCI & Design Section -->
-
-
-				<!-- Data Visualization Section -->
-				<br>
-				<br>
-				<h1 class="uk-article-title">
-					<i class="uk-icon-pencil"></i> Data Visualization	    
-				</h1>
-				<hr class="uk-article-divider">
-
-				<br>
-				<br>
-				<div class="uk-grid text_style">
-
-					<!-- Magic Coke -->
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/MagicCoke.jpg " width="240 " height="180 " alt="MagicCoke ">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>Magic Coke</h3>
-								<br> Data Visualization | Web Development
-							</figcaption>
-							<a class="uk-position-cover " href="demos/magic-coke/index.html " target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-2-3">
-						<div class="uk-text-large uk-text-left uk-text-break ">
-							(2016) A data visualization project that built a info page for running a between-subject user experiment among a dummy coke brand "Magic Coke" and "Coca-Cola"
-
-							<br>
-							<br>Design Layout
-							<a href="files/MagicCoke_Design_Layout.pdf " target="_blank ">
-								here
-							</a>.
-						</div>
-					</div>
-				</div>
-				<!-- End of Visual Creation Section-->
-
-
-				<!-- Coding Section -->
-				<br>
-				<br>
-				<h1 class="uk-article-title">
-			    	<i class="uk-icon-keyboard-o"></i> Coding
-			    </h1>
-				<p class="uk-article-lead text_style">
-					I love coding and I build all kinds of gadgets. The software projects shown below are the catchings of the sparks in my mind.
-				</p>
-				Most of the projects are hold on Github, under my name <a href="https://github.com/sundychenD" target="_blank">@sundychenD</a>
-				<hr class="uk-article-divider">
-				<br>
-				<br>
-				<div class="uk-grid">
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/foodi.jpg" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Foodi</h3>
-								<br> A light weight social website. Built with Jinja2.
-							</figcaption>
-							<a class="uk-position-cover" href="http://foodiprototype01.appspot.com" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/psr.png" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Arithmetic Parser</h3>
-								<br> An arithmetic parser support "+, -, *, /". Built with Python.
-							</figcaption>
-							<a class="uk-position-cover" href="https://github.com/sundychenD/Arithmetic_Parser" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/scb.jpg" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>StarCraft Battle</h3>
-								<br> A command line game filled with StarCraft II characters. Built with Python.
-							</figcaption>
-							<a class="uk-position-cover" href="https://github.com/sundychenD/StarCraftBattle" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/rudp.png" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>RUDP</h3>
-								<br> Reliable file transfer protocol build on UDP, using Java SE.
-							</figcaption>
-							<a class="uk-position-cover" href="https://github.com/sundychenD/ReliableUDP" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/magical.jpg" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Magical</h3>
-								<br> A command line based todo list software. Built with Java SE.
-							</figcaption>
-							<a class="uk-position-cover" href="https://github.com/cs2103aug2014-w15-1j/main" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/proxy.jpg" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Proxy</h3>
-								<br> An multi-thread HTTP Proxy built with Java SE.
-							</figcaption>
-							<a class="uk-position-cover" href="https://github.com/sundychenD/HTTPProxy" target="_blank"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/payload_c.png" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Intern Proj 1</h3>
-								<br> Enterprise customer payload chart (In Autodesk). Built with Javascript. (No Preview)
-							</figcaption>
-							<a class="project_block uk-position-cover"></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover">
-							<img class="uk-border-rounded" src="images/proj/payload_d.png" width="240" height="180" alt="">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background">
-								<h3>Intern Proj 2</h3>
-								<br> Enterprise customer payload downloading page (In Autodesk). Built with C#. (No Preview)
-							</figcaption>
-							<a class="uk-position-cover"></a>
-						</figure>
-					</div>
-				</div>
-				<!-- End of Coding Section -->
-
-				<!-- Book Section -->
-				<br>
-				<br>
-				<h1 class="uk-article-title ">
-			   		<i class="uk-icon-book "></i> My Book
-				</h1>
-				<p class="uk-article-lead text_style ">
-					I wrote travel diaries for the places I've been, and I always call them "Photography Gallery " because I put more photos than words.
-					<br>
-					<br>
-					<i class="uk-icon-copyright "></i> Copy Right owned by Chen Di
-				</p>
-
-				<hr class="uk-article-divider ">
-				<br>
-
-				<div class="uk-grid ">
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/8days_cover_1.png " width="243 " height="364 " alt=" ">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>《八日本 一》 <br> "8 Days, Part I "</h3>
-								<br> 八天
-								<br> 日本
-								<br>
-								<br> 大阪
-							</figcaption>
-							<a class="uk-position-cover " href="files/8_days_JP_1.pdf " target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/8days_cover_2.png " width="243 " height="364 " alt=" ">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>《八日本 二》 <br> "8 Days, Part II "</h3>
-								<br> 八天
-								<br> 日本
-								<br>
-								<br> 京都
-							</figcaption>
-							<a class="uk-position-cover " href="files/8_days_JP_2.pdf " target="_blank "></a>
-						</figure>
-					</div>
-
-					<div class="uk-width-medium-1-3 code_project ">
-						<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-							<img class="uk-border-rounded " src="images/proj/8days_cover_3.png " width="243 " height="364 " alt=" ">
-							<figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-								<h3>《八日本 三》 <br> "8 Days, Part III "</h3>
-								<br> 八天
-								<br> 日本
-								<br>
-								<br> 东京
-							</figcaption>
-							<a class="uk-position-cover " href="files/8_days_JP_3.pdf " target="_blank "></a>
-						</figure>
-					</div>
-				</div>
-				<!-- End of Book Section -->
-
-
-				<!-- Translating Section -->
-				<!-- <br><br>
-				<h1 class="uk-article-title ">
-			    	<i class="uk-icon-language "></i> Translating
-			    </h1>
-			    <p class="uk-article-lead text_style ">
-			    	I just started working on this project in Sept 2015, because I wanted to write some stories in Chinese, however I ended up doing document translation.
-			    </p>
-			    I mainly do translation work on Tranifex <a href="https://www.transifex.com/user/profile/sundychenD/ " target="_blank ">@sundychenD</a>
-			    <br>
-			    P.S. I do not own any image displayed in "Translating " section.
-			    <hr class="uk-article-divider "><br>
-
-			    <div class="uk-grid ">
-					<div class="uk-width-medium-1-3 code_project ">
-				   		<figure class="uk-border-rounded uk-overlay uk-overlay-hover ">
-						    <img class="uk-border-rounded " src="http://7d9l9r.com1.z0.glb.clouddn.com/elementary_os.png " width="240 " height="180 " alt=" ">
-						    <figcaption class="uk-overlay-panel uk-overlay-slide-bottom uk-overlay-background ">
-						    	<h3>Elementary OS</h3><br>
-						    	The most elegant Linux I've ever seen.
-						    </figcaption>
-						    <a class="uk-position-cover " href="https://elementary.io/get-involved " target="_blank "></a>
-						</figure>
-				   	</div>
-				</div> -->
-				<!-- End of Translating Section -->
-
-
-				<br>
-				<br>
-				<br>
-				<br>
-			</article>
-		</div>
-	</div>
-
-	<!-- This is the pop up model -->
-	<div id="pop-up-nav" class="uk-modal ">
-		<div class="uk-modal-dialog ">
-			<a class="uk-modal-close uk-close "></a>
-			<div class="uk-modal-close " id="home_button" onclick="home_action() ">
-				<h2 class="navbar_title_pop "><a>Home</a></h2></div>
-			<div class="uk-modal-close " id="about_button" onclick="about_action() ">
-				<h2 class="navbar_title_pop "><a>About</a></h2></div>
-			<div class="uk-modal-close " id="portfolio_button">
-				<h2 class="navbar_title_pop "><a href="portfolio/index.html" target="_blank ">Portfolio</a></h2></div>
-			<div class="uk-modal-close " id="projects_button" onclick="projects_action() ">
-				<h2 class="navbar_title_pop "><a>Projects</a></h2></div>
-			<div class="uk-modal-close " id="blog_button ">
-				<h2 class="navbar_title_pop "><a href="http://188.166.240.125:3000/jade " target="_blank ">Blog</a></h2></div>
-		</div>
-	</div>
-
-	<!-- Top special effect menu -->
-	<div class="uk-grid">
-		<div class="bottom_bg_click uk-width-large-1-1 uk-container-center ">
-			<div class="uk-width-1-6 effect_menu uk-container-center ">
-				<div class="uk-grid ">
-					<div class="uk-width-1-3 ">
-						<!-- Click to switch background -->
-						<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-rotate-right " onclick="change_background() " title="Change Background ">
-					</i>
-					</div>
-					<div class="uk-width-1-3 ">
-						<!-- Click to unblur -->
-						<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-adjust " onclick="home_action() " title="Unblur ">
-					</i>
-					</div>
-					<div class="uk-width-1-3 ">
-						<!-- Click to enter full screen -->
-						<i class="uk-animation-hover uk-animation-scale uk-animation-top-center uk-border-circle uk-icon-medium uk-icon-desktop " onclick="wholePageFullScreen() " title="Full Screen ">
-					</i>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- This is the bottom navbar -->
-	<nav class="uk-grid uk-width-large-1-1 bottom_navbar uk-grid-collapse">
-		<!--	<nav class="uk-navbar uk-grid bottom_navbar  ">-->
-		<div class="uk-width-large-1-4 uk-visible-large ">
-			<div class="uk-animation-hover uk-animation-fade " id="home_button " onclick="home_action() ">
-				<h1 class="navbar_title "><a>Home</a></h1>
-			</div>
-		</div>
-		<div class="uk-width-large-1-4 uk-visible-large ">
-			<div class="uk-animation-hover uk-animation-fade " id="about_button " onclick="about_action() ">
-				<h1 class="navbar_title "><a>About</a></h1>
-			</div>
-		</div>
-		<div class="uk-width-large-1-4 uk-visible-large ">
-			<div class="uk-animation-hover uk-animation-fade " id="projects_button " onclick="projects_action() ">
-				<h1 class="navbar_title "><a>Projects</a></h1>
-			</div>
-		</div>
-		<div class="uk-width-large-1-4 uk-visible-large " onclick="change_background() ">
-			<div class="uk-animation-hover uk-animation-shake ">
-				<h1 class="navbar_title "><a>Chen Di</a></h1>
-			</div>
-		</div>
-		<div class="uk-width-small-1-1 uk-hidden-large " data-uk-modal="{target: '#pop-up-nav', center:true} ">
-			<h1 class="navbar_title ">Chen Di</h1>
-		</div>
-	</nav>
-	<script type="text/javascript " src="js/main_page.js "></script>
-	<script type="text/javascript ">
-		$(document).ready(function () {
-			// Hide about and project block
-			$("#about_block ").hide();
-			$("#projects_block ").hide();
-
-			// Retrieve random background image
-			var bg = bgArray[Math.floor(Math.random() * bgArray.length)];
-			var clear_path = 'url(' + bg['clear'] + ')';
-			var blur_path = 'url(' + bg['blur'] + ')';
-
-			$('#main_bg').css('background-image', clear_path);
-			$('#main_bg_dummy').css('background-image', clear_path);
-			$('#main_bg_blur').css('background-image', blur_path);
-			$('#main_bg_blur_dummy').css('background-image', blur_path);
-			NProgress.done();
-		});
-	</script>
+	<script type="text/javascript" src="js/main_page.js"></script>
 </body>
 
 </html>

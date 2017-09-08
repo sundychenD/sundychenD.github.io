@@ -1,193 +1,58 @@
-/*
-$('#home_button').click(function() {
-	var b_img = $('#main_container').css('background-image');
-	var blured_b_img = b_img.slice(0, -5) + "-blur.jpg";
-	$('#main_container').css('background-image', blured_b_img);
-});
-*/
-var bgArray = [{'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Torii.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Torii-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kiyomizu.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kiyomizu-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Fushimi.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Fushimi-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Train_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Train_01-blur.jpg'},
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Brunei.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Brunei-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Skytree_cloud.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Skytree_cloud-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/NY_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/NY_01-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_01-blur.jpg'},
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_sea.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_sea-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_02.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Garden_02-blur.jpg'}, 
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_street.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/SF_street-blur.jpg'},
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/UCB_Library.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/UCB_Library-blur.jpg'},
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_01.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_01-blur.jpg'},
-			   {'clear': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_02.jpg', 'blur': 'http://7d9l9r.com1.z0.glb.clouddn.com/Kinabalu_02-blur.jpg'}];
-
-function blur_background() {
-	if (is_showing_real_clear()) {
-		$('#main_bg').fadeTo("slow", 0);
-		$('#main_bg_blur').fadeTo("fast", 1);
-	} else {
-		$('#main_bg_dummy').fadeTo("slow", 0);
-		$('#main_bg_blur_dummy').fadeTo("fast", 1);
-	}
+function show_block(block_id) {
+	$(block_id).fadeTo("fast", 1);
+	$(block_id).show();
 }
 
-function unblur_background() {
-	if (is_showing_real_blur()) {
-		$('#main_bg').fadeTo("fast", 1);
-		$('#main_bg_blur').fadeTo("slow", 0);
-	} else {
-		$('#main_bg_dummy').fadeTo("fast", 1);
-		$('#main_bg_blur_dummy').fadeTo("slow", 0);
-	}
+function hide_block(block_id) {
+	$(block_id).fadeTo("fast", 0);
+	$(block_id).hide();
 }
 
-function show_block(block_name) {
-	$(block_name).show();
-	$(block_name).fadeTo("fast", 1);
+function remove_active(nav_id) {
+	$(nav_id).removeClass("uk-active");
 }
 
-function hide_block(block_name) {
-	$(block_name).fadeTo("fast", 0);
-	$(block_name).hide();
+function add_active(nav_id) {
+	$(nav_id).addClass("uk-active");
 }
 
-function toggle_block(block_name) {
-	if ($(block_name).css("opacity") == 0) {
-		show_block(block_name);
-	} else {
-		hide_block(block_name);
-	}
-}
-
-function home_action() {
-	if ($('#main_bg').css("opacity") == 0) {
-		unblur_background();
-	}
-	update_block("clear");
-}
-
-function update_block(block_name) {
-	var blocks = ["#about_block", "#projects_block"]
+function update_block(block_id) {
+	var blocks = ["#projects_block", "#about_block", "#snippets_block"]
 	for (var index = 0; index < blocks.length; index ++) {
-		if (blocks[index] == block_name) {
-			show_block(block_name);
-		} else {
+		if (blocks[index] != block_id) {
 			hide_block(blocks[index]);
+		} else {
+			show_block(blocks[index]);
 		}
 	}
 }
 
-function is_clear_state() {
-	return $('#main_bg').css('opacity') == 1 || $('#main_bg_dummy').css('opacity') == 1;
+function update_nav(nav_id) {
+	var navs = ["#projects_nav", "#about_nav", "#snippets_nav"]
+	for (var index = 0; index < navs.length; index ++) {
+		if (navs[index] != nav_id) {
+			remove_active(navs[index]);
+		} else {
+			add_active(navs[index]);
+		}
+	}
 }
 
 function about_action() {
-	if (is_clear_state()) {
-		blur_background();
-	}
-
+	update_nav("#about_nav");
 	update_block("#about_block");
 }
 
 function projects_action() {
-	if (is_clear_state()) {
-		blur_background();
-	}
-
+	update_nav("#projects_nav");
 	update_block("#projects_block");
 }
 
-
-function is_showing_real_clear() {
-	return $('#main_bg').css('opacity') == 1;
+function snippets_action() {
+	update_nav("#snippets_nav");
+	update_block("#snippets_block");
 }
 
-function is_showing_real_blur() {
-	return $('#main_bg_blur').css('opacity') == 1;
-}
 
-function switch_effect(new_bg, old_bg, new_bg_path) {
-	// Prepare new bg
-	$(new_bg).css('opacity', 0);
-	$(new_bg).css('background-image', new_bg_path);
-	
-	// Show switching process
-	$(old_bg).fadeTo("slow", 0);
-	$(new_bg).fadeTo("slow", 1);
-}
 
-function update_bg(bg, new_bg_path) {
-	$(bg).css('background-image', new_bg_path);
-}
-
-function get_cur_bg_url() {
-	if (is_real_state()) {
-		return $("#main_bg").css('background-image');
-	} else {
-		return $("#main_bg_dummy").css('background-image');
-	}
-}
-
-function get_new_bg() {
-	var cur_bg_clear_url = get_cur_bg_url();
-	var new_bg_obj = bgArray[Math.floor(Math.random() * bgArray.length)];
-	while (cur_bg_clear_url.indexOf(new_bg_obj['clear']) != -1) {
-		new_bg_obj = bgArray[Math.floor(Math.random() * bgArray.length)];
-	}
-	return new_bg_obj;
-}
-
-function is_real_state() {
-	return $('#main_bg').css('opacity') == 1 || $('#main_bg_blur').css('opacity') == 1;
-}
-
-function change_background() {
-
-	// Get new bg image
-	var bg = get_new_bg();
-	var new_clear_path = 'url(' + bg['clear'] + ')';
-	var new_blur_path = 'url(' + bg['blur'] + ')';
-
-	var new_bg_clear;
-	var old_bg_clear;
-	var new_bg_blur;
-	var old_bg_blur;
-
-	if (is_real_state()) {
-		new_bg_clear = '#main_bg_dummy';
-		old_bg_clear = '#main_bg';
-		new_bg_blur = '#main_bg_blur_dummy';
-		old_bg_blur = '#main_bg_blur';
-	} else {
-		new_bg_clear = '#main_bg';
-		old_bg_clear = '#main_bg_dummy';
-		new_bg_blur = '#main_bg_blur';
-		old_bg_blur = '#main_bg_blur_dummy';
-	}
-
-	if (is_clear_state()) {
-		switch_effect(new_bg_clear, old_bg_clear, new_clear_path);
-		update_bg(new_bg_blur, new_blur_path);
-	} else {
-		switch_effect(new_bg_blur, old_bg_blur, new_blur_path);
-		update_bg(new_bg_clear, new_clear_path);
-	}
-}
-
-// Find the right method, call on correct element
-function launchIntoFullscreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if(element.mozRequestFullScreen) {
-    element.mozRequestFullScreen();
-  } else if(element.webkitRequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if(element.msRequestFullscreen) {
-    element.msRequestFullscreen();
-  }
-}
-
-// Launch fullscreen for browsers that support it
-function wholePageFullScreen() {
-	launchIntoFullscreen(document.documentElement);
-}
 
