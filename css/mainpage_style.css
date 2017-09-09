@@ -85,6 +85,7 @@ body {
 
 .info-block {
 	margin-top: 30px;
+	margin-bottom: 30px;
 	color: var(--custom-black-dark);
 }
 
@@ -99,4 +100,25 @@ body {
 
 .project-description {
 	font-size: 1em;
+}
+
+.about-title {
+	margin-top: 70px;
+}
+
+
+.about-content {
+	margin-top: 70px;
+}
+
+.title-big {
+	font-size: 2.5em;
+}
+
+.title-bold {
+	font-family: "HelveticaNeue-Medium";
+}
+
+.normal-font {
+	font-family: "HelveticaNeue-Light"; 
 }

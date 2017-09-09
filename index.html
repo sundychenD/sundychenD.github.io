@@ -30,7 +30,8 @@
 			<!-- Navigation -->
 			<ul class="uk-nav uk-nav-side nav-bar">
 				<li class="uk-active"id="projects_nav"><a onclick="projects_action()">Projects</a></li>
-			    <li id="snippets_nav"><a onclick="snippets_action()">Code Snippets</a></li>
+			    <!-- <li id="snippets_nav"><a onclick="snippets_action()">Code Snippets</a></li> -->
+			    <li id="resume_nav"><a onclick="resume_action()">Resume</a></li>
 			    <li id="about_nav"><a onclick="about_action()">About</a></li>
 			</ul>
 
@@ -55,32 +56,192 @@
 
 		<!-- Main Display -->
 		<div id="Display-Canvas" class="uk-width-small-7-10">
+			
+			<!-- PROJECTS -->
 			<div id="projects_block" class="info-block">
 				<ul class="uk-grid" data-uk-grid-margin>
 
+					<!-- RideNUS -->
                     <li class="uk-width-medium-1-2 uk-row-first">
                         <figure class="uk-overlay uk-overlay-hover">
-                            <img src="./images/proj/reindeer.jpg" width="600" height="400" alt="RideNUS">
-                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./portfolio/images/peek/ridenus.png" width="600" height="400" alt="RideNUS">
+                            <img src="./images/proj/makecode.png" width="600" height="400" alt="RideNUS">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/makecode.png" width="600" height="400" alt="MakeCode">
                             <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
-                                <div class="project-title">Ride NUS</div>
+                                <div class="project-title">Microsoft MakeCode</div>
+                                <div class="project-description">UX Design | Rapid Prototyping | Web Dev</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+					<!-- RideNUS -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/ridenus.png" width="600" height="400" alt="RideNUS">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/ridenus.png" width="600" height="400" alt="RideNUS">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">RideNUS</div>
                                 <div class="project-description">UI/UX Design | User Studies</div>
                             </figcaption>
                             <a class="uk-position-cover" href="" target="_blank"></a>
                         </figure>
                     </li>
 
+                    <!-- Reindeer -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/reindeer.png" width="600" height="400" alt="Reindeer">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/reindeer.png" width="600" height="400" alt="Reindeer">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Reindeer</div>
+                                <div class="project-description">UX Design | Software Engineering</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
 
+                    <!-- Squares -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/squares.png" width="600" height="400" alt="Squares">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/squares.png" width="600" height="400" alt="Squares">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Sqaure</div>
+                                <div class="project-description">UI Design | Visual Creation</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+                    <!-- Bill Splitter -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/BillSplitter.png" width="600" height="400" alt="Squares">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/billsplitter.png" width="600" height="400" alt="Bill Splitter">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Bill Splitter</div>
+                                <div class="project-description">UI Optimization | Cognitive Research | KLM Analysis</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+                    <!-- CUI -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/cui.png" width="600" height="400" alt="Squares">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/cui.png" width="600" height="400" alt="Conversational User Interface">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Conversational User Interface</div>
+                                <div class="project-description">HCI Research</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+                    <!-- Autodesk -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/autodesk.png" width="600" height="400" alt="Squares">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/autodesk.png" width="600" height="400" alt="Autodesk">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Autodesk Intern Proj</div>
+                                <div class="project-description">UI Design | Web Dev | Agile Process</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+                    <!-- Goldman -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/goldman.png" width="600" height="400" alt="Goldman">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/goldman.png" width="600" height="400" alt="Goldman Sachs">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">Goldman Sachs Intern Proj</div>
+                                <div class="project-description">UI Design | Web Dev | Business Process Modeling</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
+
+                    <!-- 8 Days in JP -->
+                    <li class="uk-width-medium-1-2 uk-row-first">
+                        <figure class="uk-overlay uk-overlay-hover">
+                            <img src="./images/proj/8daysjp.png" width="600" height="400" alt="Goldman">
+                            <img class="uk-overlay-panel uk-overlay-image uk-overlay-fade" src="./images/proj-peek/8daysjp.png" width="600" height="400" alt="8 Days in Japan">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-ignore">
+                                <div class="project-title">8 Days in Japan</div>
+                                <div class="project-description">Digital Media Production | Photobook | Travel Notes</div>
+                            </figcaption>
+                            <a class="uk-position-cover" href="" target="_blank"></a>
+                        </figure>
+                    </li>
                 </ul>
 			</div>
+
+			<!-- CODE SNIPPETS -->
 			<div id="snippets_block" class="info-block" style="display: none;">
 				Code Snippets
 			</div>
+
+			<!-- RESUME -->
+			<div id="resume_block" class="info-block" style="display: none;">
+				<div class="title-bold">
+					Education:
+				</div>
+				<div class="normal-font">
+					2017 - 2018: Master of Professional Studies, Information Science | Cornell University<br>
+					2013 - 2017: Bachelor of Computing, Computer Science (specializing in Interactive Media) | National University of Singapore<br>
+				</div><br>
+				<div class="title-bold">
+					Employment:
+				</div>
+				<div class="normal-font">
+					2017: Research Intern, Human-Computer Interaction | NUS-HCI Lab<br>
+					2016: Teaching Assistant, Computer Graphics | National University of Singapore<br>
+					2016: Summer Analyst, Operations | Goldman Sachs<br>
+					2015: Software Engineer, Quality Assurance | Autodesk<br>
+				</div><br>
+				<div class="title-bold">
+					Publication:
+				</div>
+				<div class="normal-font">
+					"Simulating Crowd Motion Using Density Estimation and Optical Flow" - WCS 2017, Computer Graphics/Agent Based Simulation, First Author
+				</div><br>
+				<div class="normal-font">
+					Download PDF <a href="./files/chendi_resume.pdf">HERE</a>
+				</div><br>
+			</div>
+
+			<!-- ABOUT -->
 			<div id="about_block" class="info-block" style="display: none;">
-				About
+				<div class="about-title title-big">
+					Hi there,
+				</div>
+				<div class="about-content normal-font">
+					<div>
+						I'm a master student pursuing a degree in Information Science in Cornell University. My focus area of studies are Human-Computer Interaction, UI / UX Design.
+					</div><br>
+					<div>
+						Before I came to the State, I spent 4 years in a beautiful tropical island, Singapore, where I obtained my Honours Bachelor's degree (graduated with distinction) in Computer Science from National University of Singapore.
+					</div><br>
+					<div>
+						I enjoy coding as well as working with graphics. You may find me playing with Sketch while having Terminal window opens when I'm working.
+					</div><br>
+					<div>
+						I'm currently doing a project with Microsoft Research on creating a platform that helps non-programmer using some of the coolest JavaScript libraries. Checkout <a href="https://makecode.com/" target="_blank">Microsoft MakeCode</a> if you want to know more about the project.
+					</div><br>
+					<div>
+						If you are interested in any of my projects, feel free to drop me a message. I'll be more than happy to discuss them with you.
+					</div><br>
+					<div>
+						Email: sundy.chendi@gmail.com<br>
+						Phone: +1 607.379.4490
+					</div><br>
+				</div>
 			</div>
 		</div>
-
 	</div>
 	<script type="text/javascript" src="js/main_page.js"></script>
 </body>
