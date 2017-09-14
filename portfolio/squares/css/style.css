@@ -54,39 +54,38 @@ p {
 	 }
 }
 
-/* Role Style
---- */
-
-html, body, div {
-	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+#cover {
+	background-image: url(./../images/Cover.png);
 }
 
-.section-title {
-	text-align: center;
-	font-family: 'HelveticaNeue-Medium';
-	font-size: 1.2em;
-	line-height: 1.2em;
+#section-1 {
+	background-image: url(./../images/Section_1.png);
 }
 
-.white-font {
-	color: white;
+#section-2 {
+	background-image: url(./../images/Section_2.png);
 }
 
-.black-font {
-	color: black;
+#section-3 {
+	background-image: url(./../images/Section_3.png);
 }
 
-.section-content {
-	text-align: center;
-	font-size: 1.2em;
-	line-height: 1.2em;
+#section-4 {
+	background-image: url(./../images/Section_4.png);
 }
 
-hr {
-	margin: 0px;
-	padding: 0px;
+#section-5 {
+	background-image: url(./../images/Section_5.png);
 }
 
-.section-padding-medium-top {
-	padding-top: 10%;
+#section-6 {
+	background-image: url(./../images/Section_6.png);
+}
+
+#section-7 {
+	background-image: url(./../images/Section_7.png);
+}
+
+#section-8 {
+	background-image: url(./../images/Section_8.png);
 }

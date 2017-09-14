@@ -1,0 +1,64 @@
+html, body, div {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.nav-bottom {
+	color: black;
+	margin: 3%;
+	padding: 1%;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	border-radius: 1000px;
+}
+
+
+
+.page-info {
+	padding-top: 5%;
+}
+
+.page-title {
+	text-align: center;
+	font-family: 'HelveticaNeue-Medium';
+	font-size: 3em;
+}
+
+.page-sub-title {
+	text-align: center;
+	color: #cccccc;
+	font-size: 2em;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.section-title {
+	text-align: center;
+	font-family: 'HelveticaNeue-Medium';
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+.section-content {
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+.white-font {
+	color: white;
+}
+
+.black-font {
+	color: black;
+}
+
+.black-bar {
+	background-color: black;
+}
+
+
+hr {
+	margin: 0px;
+	padding: 0px;
+}
