@@ -1,17 +1,13 @@
+
+
 /*
-Color Code:
-	Default font-white color: color: rgb(233, 232, 212);
-	Default black color: #3C485E;
-	Default black-dark: color: rgb(29, 35, 47);
-
+	Define Color Code
 */
-
-
 :root {
-	--custom-white: #D3E8E1;
-	--custom-black: rgb(228, 74, 102);
-	--custom-black-light: rgb(238, 84, 112);
-	--custom-black-dark: rgb(29, 35, 47);
+	--custom-white: #3C485E;
+	--custom-black: #F4F4F4;
+	--custom-black-light: rgba(60, 72, 94, 0.4);
+	--custom-black-dark: #3C485E;
 }
 
 body {
@@ -24,20 +20,16 @@ body {
 #Side-Bar {
 	position: relative;
 	background-color: var(--custom-black);
+	padding-left: 25px;
 }
 
 #Display-Canvas {
 	background-color: var(--custom-white);	
 }
 
-@media screen and (min-width: 480px) {
-	#Display-Canvas {
-		overflow-y: scroll;
-		padding-right: 30px;
-	}
+.no-padding-left {
+	padding-left: 0px;
 }
-
-
 
 .uk-nav-side>li>a {
 	text-align: center;
@@ -57,7 +49,7 @@ body {
 }
 
 .profile-name {
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: center;
 	margin-top: 10px;
 	color: var(--custom-white);
@@ -76,6 +68,7 @@ body {
 .bottom-contact {
 	text-align: center;
 	margin-bottom: 10px;
+	padding-left: 0px;
 }
 
 .bottom-info {
@@ -84,9 +77,9 @@ body {
 }
 
 .info-block {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	color: var(--custom-black-dark);
+	padding-top: 30px;
+	padding-left: 30px;
+	color: var(--custom-black);
 }
 
 .icon-black {
@@ -122,3 +115,49 @@ body {
 .normal-font {
 	font-family: "HelveticaNeue-Light"; 
 }
+
+.z-index-top {
+	z-index: 999;
+}
+
+#particle-canvas {
+	width: 99%;
+	height: 480px;
+	margin-left: -25px;
+}
+
+@media screen and (min-width: 480px) {
+	#Display-Canvas {
+		overflow-y: scroll;
+	}
+	#particle-canvas {
+		height: 99%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.project-title {
+		font-size: 1em;
+	}
+
+	.project-description {
+		font-size: 0.7em;
+	}
+}
+
+@media screen and (min-width: 1220px) {
+	#Side-Bar {
+		padding-left: 35px;
+	}
+	#particle-canvas {
+		margin-left: -25px;
+	}
+	.project-title {
+		font-size: 1.2em;
+	}
+
+	.project-description {
+		font-size: 1em;
+	}
+}
+

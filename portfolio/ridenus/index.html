@@ -87,6 +87,37 @@
 	</div>
 	<hr>
 
+	<!-- Scroll Spy Bar -->
+	<div id="scroll-spy-bar-anchor" class="uk-width-1-1">
+		<div class="uk-grid uk-grid-collapse">
+			<div class="uk-width-8-10 uk-container-center">
+				<div id="#scroller" class="uk-grid scroll-spy-bar">
+					<div id="introduction-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#introduction')">
+					<a>
+						Introduction
+					</a>	
+					</div>
+
+					<div id="design-process-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#design-process')">
+					<a>
+						Design Process
+					</a>
+					</div>
+
+					<div id="final-product-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#final-product')">
+					<a>
+						Final Product
+					</a>
+					</div>
+
+					<div class="uk-width-small-1-4">
+						Reflection
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 	<div id="cover" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
@@ -94,11 +125,168 @@
 	</div>
 	<hr>
 
+	<!-- Start of Introduction -->
+	<div id="introduction" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Goal: "Effective campus transportation”
+		</div>
+
+		<div class="content-subtitle">
+			Problem: Can we split buses?
+		</div>
+
+		<div class="content-body">
+
+			This project aims to solve the problem with the inflexibility of the shuttle bus system at NUS. During peak hours the demand for them is higher than the supply, resulting in overly crowded buses and sad passengers. During off-peak on the other hand the buses do not run as often, resulting in longer waits.  In the worst case there is no bus service at all, leaving passengers with few options for how to get around other than walking long distances.
+		</div>
+
+		<img src="./images/bus-time.png">
+
+		<div class="content-subtitle">
+			Solution: E-Scooter System
+		</div>
+
+		<div class="content-body">
+
+			To mitigate this problem we propose to design a smartphone application which could be used in unison with a electric scooter rental system on campus. Such bike based rental systems have previously been adopted on campuses worldwide, for example at University of British Columbia in Canada and University of Nottingham in the UK. It is our opinion that a well designed interactive mobile application for people to use the system would be a large part in the success of deploying such a system on campus and thus we are looking into the requirements and design of an application would such a system become available at NUS.
+		</div>
+
+		<div class="content-body">
+			Why scooters? - 
+			Scooter has a more flexible transporting power, when someone finishes up using, the other can take it.<br><br>
+
+			Why go electrical? - 
+			Ordinary bike used to be on our list, however considering the large number of slopes in NUS campus, electric powered one takes less efforts to ride.<br><br>
+
+			A bit too fictitious? - 
+			The security patrolling vehicle around campus has all switches to self balancing scooters, sounds like a good time to make the idea more prevailing.
+		</div>
+	</div>
+	<hr>
+
+	<!-- Start of Design Process -->
+	<div id="design-process" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Design Process
+		</div>
+
+		<!-- User Studies -->
+		<div class="content-subtitle">
+			| User Studies
+		</div>
+		<hr>
+
+		<div class="content-body">
+
+			In order to precisely define our target user group, we started our project with user study. We defined three user groups. Upon defining user groups, we carried out a series of <b>semi-structure interview</b> where we had our target users described their experiences with shuttle bus in general. The purpose of the interview is to gather user opinions of the current shuttle bus system and their essential need in using bike system.
+		</div>
+
+		<img src="./images/persona.png">
+
+		<!-- Requirement Analysis -->
+		<div class="content-subtitle">
+			| Requirement Analysis
+		</div>
+		<hr>
+
+		<div class="content-body">
+
+			We started off the data analysis by concatenating all of the interview answers into the same document to get a better overview of where the respondents had similar opinions and where they differed. We then summarized the core findings on post-its in order to make an affinity diagram. 
+		</div>
+
+		<img src="./images/affinity.png">
+
+		<div class="content-body">
+
+			From analysing interview answers and affinity diagram, we further came up a few <b>main tasks</b> from within our project scope. 3 tasks were difined at this phase. They are “Plan trip & check bike availability”, “Route planning” and “Usage fee”. These three tasks reflected users current issue with the shuttle bus system and defined users’ actual needs in using an alternating bike system. 
+			<br><br>
+
+			After performing a task analysis we have concluded a few <b>requirements</b> for the mobile application which would work in unison with a bike rental system on the NUS campus: 
+			<br><br>
+
+			1. <b>Booking a bike</b> - The users expressed their concern on the unreliability shuttle bus system. Enabling user to book a bike from a remote application would allow the users to either plan their trip beforehand and check which bikes are available right now.
+			<br><br>
+
+			2. <b>Unlocking and locking a bike in a hassle free way</b> - To make the system flexible to use there can be no extra work included with keys and such but rather the unlocking and locking of a bike take place from inside the application.
+			<br><br>
+
+			3. <b>Plan route</b> - The application would provide the user with the option to find a route to take in case the user is not sure where to go. Different routes for fastest travel, less trafficked roads and roads with less hills would address the users personal preferences.
+			<br><br>
+
+			4. <b>Making sure there are places to return the bike</b> - To make the returning process easy to cope with, the application would have a function which allows the user to book a return station before he or she starts biking.
+			<br><br>
+
+			5. <b>Seeing when to pay</b> - The application would show how long the user can use the bike before it starts costing money and how much money it is costing after that period, which gives the user substantial information to decide how they want to use the system. 
+		</div>
+
+		<!-- Storyboard -->
+		<div class="content-subtitle">
+			| Storyboard & Use Cases
+		</div>
+		<hr>
+
+		<div class="content-body">
+			To achieve a universal agreement of the main usage senario among our group mates, we made a storyboard that describes how the primary users, could go about to achieve their goals through three key tasks:
+			<br><br>
+
+			1. Finding available bikes based on user’s geological location and unlocking a bike
+			<br>
+			2. Plan trip on campus, provide suggestions on different types of routes
+			<br>
+			3. Return bike at destination
+		</div>
+
+		<img src="./images/storyboard.png">
+		
+		<!-- Protoyping & User Evaluation -->
+		<div class="content-subtitle">
+			| Protoyping & User Evaluation
+		</div>
+		<hr>
+
+		<div class="content-body">
+
+			To achieve better prototyping result, we built our protypes in parallel. Among four group members, each one of us built our own prototype individually. We believed that in this way we could generate more creative ideas and covers more potential problems. 
+		</div>
+
+		<div class="content-body">
+			Iteration 1
+		</div>
+
+		<img src="./images/iter-1.png">
+		
+		<div class="content-body">
+			Iteration 2
+		</div>
+		
+		<img src="./images/iter-2.png">
+
+		<div class="content-body">
+			The “<b>Think-Aloud</b>” method is a powerful evaluation technique as it allows us to gain more insights into what the users really feel than other commonly-seen methods like observing. Thus we invited four users to evaluate our prototypes using the “Think Aloud” method where they are encouraged to voice out their thoughts while they perform tasks in a given scenario.
+			<br><br>
+
+			However, users tend to describe what they are doing rather than what they are thinking. In such cases we try to prompt them by asking questions when we observe that they may have something to say. And in some cases thoughts were also shared after the user had tried the prototype, more in line with a retrospective think-aloud.
+		</div>
+	</div>
+	<hr>
+
+	<!-- Start of Final Product -->
+	<div id="final-product" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Final Product
+		</div>
+
+		<div class="content-body">
+			<br>
+			<br>
+			Aside from incorporating all the requirements from user studies. The final product focus more on polishing the UI.
+		</div>
+	</div>
+
 	<div id="section-1" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
 		<img class="uk-invisible" src="./images/Cover.png">
 	</div>
-	<hr>
 
 	<div id="section-2" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
@@ -176,6 +364,78 @@
 		</div>
 	</div>
 
+<script type="text/javascript">
+	function clean_spy_bar() {
+		$(".scroll-bar-item").removeClass("active-spy-bar");
+	}
+
+	function activate_bar_item(element_id) {
+		var child_a = element_id + "-bar";
+		$(child_a).addClass('active-spy-bar');
+	}
+
+	function update_scroll_spy_bar(element_id) {
+		clean_spy_bar();
+		activate_bar_item(element_id);
+	}
+
+	function scroll_to_element(element_id) {
+		// Scroll to element
+		UIkit.Utils.scrollToElement(UIkit.$($(element_id), { /* options */ }));
+
+		// Update Scroll Spy Bar
+		update_scroll_spy_bar(element_id);
+		update_height_info();
+	}
+
+	/* Scroll spy bar */
+	// Minus 10 to get a more grace transaction
+	function get_element_scroll_trigger_point(element_id) {
+		return $(element_id).offset().top - 30;
+	}
+	
+	var introduction_height = get_element_scroll_trigger_point('#introduction');
+
+	var design_process_height = get_element_scroll_trigger_point('#design-process');
+
+	var final_product_height = 
+		get_element_scroll_trigger_point('#final-product');
+
+	function update_height_info() {
+		introduction_height = get_element_scroll_trigger_point('#introduction');
+
+		design_process_height = get_element_scroll_trigger_point('#design-process');
+
+		get_element_scroll_trigger_point('#final-product');
+	}
+
+	// Update on resize
+	$(window).resize(function() {
+		update_height_info();
+	})
+
+	// Scroll spy listener
+	$( window ).scroll(function() {
+
+	  	var current_height = $(window).scrollTop();
+
+	  	if (current_height < introduction_height) {
+  			clean_spy_bar();
+  		}
+	  	
+  		if (current_height > introduction_height &  current_height < design_process_height) {
+  			update_scroll_spy_bar("#introduction");
+  		}
+
+  		if (current_height >= design_process_height & current_height < final_product_height) {
+  			update_scroll_spy_bar("#design-process");
+  		}
+
+  		if (current_height >= final_product_height ) {
+  			update_scroll_spy_bar("#final-product");
+  		}
+	});
+</script>
 
 </body>
 </html>
