@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ride NUS</title>
+	<title>Reindeer</title>
 	<script type="text/javascript" src="./../../js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="./../../js/uikit.min.js"></script>
 	<link rel="stylesheet" href="./../../css/uikit.min.css" />
@@ -101,11 +101,140 @@
 	</div>
 	<hr>
 
+	<!-- Scroll Spy Bar -->
+	<div id="scroll-spy-bar-anchor" class="uk-width-1-1">
+		<div class="uk-grid uk-grid-collapse">
+			<div class="uk-width-8-10 uk-container-center">
+				<div id="#scroller" class="uk-grid scroll-spy-bar">
+					<div id="introduction-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#introduction')">
+					<a>
+						Introduction
+					</a>	
+					</div>
+
+					<div id="design-process-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#design-process')">
+					<a>
+						Agile Development
+					</a>
+					</div>
+
+					<div id="final-product-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#final-product')">
+					<a>
+						Final Product
+					</a>
+					</div>
+
+					<div id="reflection-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#reflection')">
+					<a>
+						Debut
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="cover" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
 		<img class="uk-invisible" src="./images/Cover.png">
 	</div>
 	<hr>
+
+	<div id="introduction" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Goal: "Integrated e-Tutorial Experience”
+		</div>
+
+		<div class="content-subtitle">
+			Background: NUS CS3283/4 "Media Technology" Class Project 
+		</div>
+
+		<div class="content-body">
+			The 2-semester long course aims to develop a media technology application under the practise of a start up environment. The whole project is built from bare ground and is pushed forward in an agile process. A new build is released for every 2 weeks.
+		</div>
+
+		<div class="content-subtitle">
+			Problem: Why people don't like online meetings? 
+		</div>
+
+		<div class="content-body">
+			Every year, NUS would conduct a "e-learning" week where no physical classes are given but only video records of lectures will be distributed. Watching lecture videos online is fine for students, however, the same approach doesn't work with tutorial sessions. When it comes to e-learning week, every TA is struggling to find "the best" application to give live tutorial sessions online.
+		</div>
+
+		<img src="./images/section_problem.png">
+
+		<div class="content-body">
+			Skype, Google Hangout, Facebook Messenger etc. --these are all great products in their field of specialization. However, none of them is customized for conducting online tutorial sessions. Where a lot of documents are being exchanged, writing and speaking happens at the same time, and TA usually prefers explaining things by hand drawings. 
+		</div>
+
+		<div class="content-subtitle">
+			Solution: Integrated Online Tutorial Platform 
+		</div>
+
+		<div class="content-body">
+			We want to develop a one-stop solution to solve issues faced in using exisitng applications. <b>Reindeer</b> is aiming to present all the features that are essential to conducting tutorials online. 
+		</div>
+
+		<img src="./images/section_features.png">
+	</div>
+	<hr>
+
+	<div id="design-process" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Project Roll Out
+		</div>
+
+		<div class="content-subtitle">
+			User Studies
+		</div>
+
+		<div class="content-body">
+			The user studies were conducted in NUS campus. We interviewed both Teaching assistants and students on their experiences with conducting / attending tutorials online.
+			<br>
+			<br>
+			Basing on the interview results, we then listed a set of requirements for our application.
+			<br>
+			<br>
+			To prioritize our requirements, we devided them into "Functional" and "Non-Functional". Functional requirements are essential for completeness of the application. Non-functionals are good to have features if sufficient amount of time is given.
+		</div>
+
+		<img src="./images/requirement.png">
+
+		<div class="content-subtitle">
+			Minimal Viable Product 
+		</div>
+
+		<div class="content-body">
+			Every two weeks, we ship a new build of the product and have it for user testing, gaining feedbacks and enters the next iteration of development.
+			<br>
+			<br>
+			In each of the iteration, we aim to get at least one functional requirement implemented. 
+			<br>
+			<br>
+			By developing in such a flow, we are able to deliver product at a faster pace and being more flexible in case sudden changes happen in user requirements.
+			
+		</div>
+
+		
+
+		<div class="content-subtitle">
+			Fullstack JavaScript 
+		</div>
+
+		<div class="content-body">
+			Backend developments usually uses a different programming language comparing to the frontend. In our project, we goes fullstack JavaScript because we believe using the same programming language helps both side in understanding each other's program flow.
+			<br>
+			<br>
+			On the front end. We use <b>Vue.js</b> for effective data-binding. On the back end, we use <b>node.js + Express.js</b> for fast server side structuring.
+		</div>
+	</div>
+	<hr>
+
+	<div id="final-product" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Final Product
+		</div>
+	</div>
 
 	<div id="section-1" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
@@ -131,6 +260,24 @@
 	</div>
 	<hr>
 
+	<div id="reflection" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Debut
+		</div>
+
+		<div class="content-subtitle">
+			Final Version 
+		</div>
+
+		<div class="content-body">
+			After one year of development, <b>Reindeer</b> made its first offcial debut at 2016 School of Computing project showcase.
+			<br>
+			<br>
+			The project is then selected as a candidate of faculty-reserved <b>Final Year Projects</b> for future undergradutes to pick up and continue its development.
+		</div>
+
+	</div>
+
 	<div id="section-5" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
 		<img class="uk-invisible" src="./images/Cover.png">
@@ -147,6 +294,88 @@
 		</div>
 		
 	</div>
+
+	<script type="text/javascript">
+		function clean_spy_bar() {
+			$(".scroll-bar-item").removeClass("active-spy-bar");
+		}
+
+		function activate_bar_item(element_id) {
+			var child_a = element_id + "-bar";
+			$(child_a).addClass('active-spy-bar');
+		}
+
+		function update_scroll_spy_bar(element_id) {
+			clean_spy_bar();
+			activate_bar_item(element_id);
+		}
+
+		function scroll_to_element(element_id) {
+			// Scroll to element
+			UIkit.Utils.scrollToElement(UIkit.$($(element_id), { /* options */ }));
+
+			// Update Scroll Spy Bar
+			update_scroll_spy_bar(element_id);
+			update_height_info();
+		}
+
+		/* Scroll spy bar */
+		// Minus 10 to get a more grace transaction
+		function get_element_scroll_trigger_point(element_id) {
+			return $(element_id).offset().top - 30;
+		}
+		
+		var introduction_height = get_element_scroll_trigger_point('#introduction');
+
+		var design_process_height = get_element_scroll_trigger_point('#design-process');
+
+		var final_product_height = 
+			get_element_scroll_trigger_point('#final-product');
+
+		var reflection_height = 
+			get_element_scroll_trigger_point('#reflection');
+
+		function update_height_info() {
+			introduction_height = get_element_scroll_trigger_point('#introduction');
+
+			design_process_height = get_element_scroll_trigger_point('#design-process');
+
+			final_product_height = get_element_scroll_trigger_point('#final-product');
+
+			reflection_height = get_element_scroll_trigger_point('#reflection');
+		}
+
+		// Update on resize
+		$(window).resize(function() {
+			update_height_info();
+		})
+
+		// Scroll spy listener
+		$( window ).scroll(function() {
+
+		  	var current_height = $(window).scrollTop();
+
+		  	if (current_height < introduction_height) {
+	  			clean_spy_bar();
+	  		}
+		  	
+	  		if (current_height > introduction_height &  current_height < design_process_height) {
+	  			update_scroll_spy_bar("#introduction");
+	  		}
+
+	  		if (current_height >= design_process_height & current_height < final_product_height) {
+	  			update_scroll_spy_bar("#design-process");
+	  		}
+
+	  		if (current_height >= final_product_height & current_height < reflection_height) {
+	  			update_scroll_spy_bar("#final-product");
+	  		}
+
+	  		if (current_height >= reflection_height) {
+	  			update_scroll_spy_bar("#reflection");
+	  		}
+		});
+	</script>
 	
 
 </body>

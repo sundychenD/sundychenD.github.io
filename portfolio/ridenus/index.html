@@ -110,8 +110,10 @@
 					</a>
 					</div>
 
-					<div class="uk-width-small-1-4">
+					<div id="reflection-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#reflection')">
+					<a>
 						Reflection
+					</a>
 					</div>
 				</div>
 			</div>
@@ -132,6 +134,14 @@
 		</div>
 
 		<div class="content-subtitle">
+			Background: NUS CS3240 "Interaction Design" Class Project 
+		</div>
+
+		<div class="content-body">
+			Project scope focuses on solving a problem persists in the scope of campus life. The project pratises a full cycle of interaction design: <i>User Studies - Requirement Analysis - Prototyping - User Evaluation</i>.
+		</div>
+
+		<div class="content-subtitle">
 			Problem: Can we split buses?
 		</div>
 
@@ -148,17 +158,17 @@
 
 		<div class="content-body">
 
-			To mitigate this problem we propose to design a smartphone application which could be used in unison with a electric scooter rental system on campus. Such bike based rental systems have previously been adopted on campuses worldwide, for example at University of British Columbia in Canada and University of Nottingham in the UK. It is our opinion that a well designed interactive mobile application for people to use the system would be a large part in the success of deploying such a system on campus and thus we are looking into the requirements and design of an application would such a system become available at NUS.
+			To mitigate this problem we propose to design a smartphone application which could be used in unison with a electric scooter rental system on campus. Such scooter based rental systems have previously been adopted on campuses worldwide, for example at University of British Columbia in Canada and University of Nottingham in the UK. It is our opinion that a well designed interactive mobile application for people to use the system would be a large part in the success of deploying such a system on campus and thus we are looking into the requirements and design of an application would such a system become available at NUS.
 		</div>
 
 		<div class="content-body">
-			Why scooters? - 
+			<b>Why scooters?</b> - 
 			Scooter has a more flexible transporting power, when someone finishes up using, the other can take it.<br><br>
 
-			Why go electrical? - 
-			Ordinary bike used to be on our list, however considering the large number of slopes in NUS campus, electric powered one takes less efforts to ride.<br><br>
+			<b>Why go electrical?</b> - 
+			Ordinary scooter used to be on our list, however considering the large number of slopes in NUS campus, electric powered one takes less efforts to ride.<br><br>
 
-			A bit too fictitious? - 
+			<b>A bit too fictitious?</b> - 
 			The security patrolling vehicle around campus has all switches to self balancing scooters, sounds like a good time to make the idea more prevailing.
 		</div>
 	</div>
@@ -178,7 +188,7 @@
 
 		<div class="content-body">
 
-			In order to precisely define our target user group, we started our project with user study. We defined three user groups. Upon defining user groups, we carried out a series of <b>semi-structure interview</b> where we had our target users described their experiences with shuttle bus in general. The purpose of the interview is to gather user opinions of the current shuttle bus system and their essential need in using bike system.
+			In order to precisely define our target user group, we started our project with user study. We defined three user groups. Upon defining user groups, we carried out a series of <b>semi-structure interview</b> where we had our target users described their experiences with shuttle bus in general. The purpose of the interview is to gather user opinions of the current shuttle bus system and their essential needs in using scooter system.
 		</div>
 
 		<img src="./images/persona.png">
@@ -198,25 +208,25 @@
 
 		<div class="content-body">
 
-			From analysing interview answers and affinity diagram, we further came up a few <b>main tasks</b> from within our project scope. 3 tasks were difined at this phase. They are “Plan trip & check bike availability”, “Route planning” and “Usage fee”. These three tasks reflected users current issue with the shuttle bus system and defined users’ actual needs in using an alternating bike system. 
+			From analysing interview answers and affinity diagram, we further came up a few <b>main tasks</b> from within our project scope. 3 tasks were difined at this phase. They are “Plan trip & check scooter availability”, “Route planning” and “Usage fee”. These three tasks reflected users current issue with the shuttle bus system and defined users’ actual needs in using an alternating scooter system. 
 			<br><br>
 
-			After performing a task analysis we have concluded a few <b>requirements</b> for the mobile application which would work in unison with a bike rental system on the NUS campus: 
+			After performing a task analysis we have concluded a few <b>requirements</b> for the mobile application which would work in unison with a scooter rental system on the NUS campus: 
 			<br><br>
 
-			1. <b>Booking a bike</b> - The users expressed their concern on the unreliability shuttle bus system. Enabling user to book a bike from a remote application would allow the users to either plan their trip beforehand and check which bikes are available right now.
+			1. <b>Booking a scooter</b> - The users expressed their concern on the unreliability shuttle bus system. Enabling user to book a scooter from a remote application would allow the users to either plan their trip beforehand and check which scooters are available right now.
 			<br><br>
 
-			2. <b>Unlocking and locking a bike in a hassle free way</b> - To make the system flexible to use there can be no extra work included with keys and such but rather the unlocking and locking of a bike take place from inside the application.
+			2. <b>Unlocking and locking a scooter in a hassle free way</b> - To make the system flexible to use there can be no extra work included with keys and such but rather the unlocking and locking of a scooter take place from inside the application.
 			<br><br>
 
 			3. <b>Plan route</b> - The application would provide the user with the option to find a route to take in case the user is not sure where to go. Different routes for fastest travel, less trafficked roads and roads with less hills would address the users personal preferences.
 			<br><br>
 
-			4. <b>Making sure there are places to return the bike</b> - To make the returning process easy to cope with, the application would have a function which allows the user to book a return station before he or she starts biking.
+			4. <b>Making sure there are places to return the scooter</b> - To make the returning process easy to cope with, the application would have a function which allows the user to book a return station before he or she starts biking.
 			<br><br>
 
-			5. <b>Seeing when to pay</b> - The application would show how long the user can use the bike before it starts costing money and how much money it is costing after that period, which gives the user substantial information to decide how they want to use the system. 
+			5. <b>Seeing when to pay</b> - The application would show how long the user can use the scooter before it starts costing money and how much money it is costing after that period, which gives the user substantial information to decide how they want to use the system. 
 		</div>
 
 		<!-- Storyboard -->
@@ -229,11 +239,11 @@
 			To achieve a universal agreement of the main usage senario among our group mates, we made a storyboard that describes how the primary users, could go about to achieve their goals through three key tasks:
 			<br><br>
 
-			1. Finding available bikes based on user’s geological location and unlocking a bike
+			1. Finding available scooters based on user’s geological location and unlocking a scooter
 			<br>
 			2. Plan trip on campus, provide suggestions on different types of routes
 			<br>
-			3. Return bike at destination
+			3. Return scooter at destination
 		</div>
 
 		<img src="./images/storyboard.png">
@@ -288,6 +298,22 @@
 		<img class="uk-invisible" src="./images/Cover.png">
 	</div>
 
+	<div class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-body">
+			<b>Component Based Design</b>
+			<br>
+			<br>
+			To attain reusablility of elements and achieves style consistency across all elements. Each of the UI components are designed as an extension of the base UI template.
+		</div>
+	</div>
+	<hr>
+
+	<div id="section-10" class="uk-cover-background">
+		<!-- Just a place holder for responsive bg -->
+		<img class="uk-invisible" src="./images/Section_10.png">
+	</div>
+	<hr>
+
 	<div id="section-2" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
 		<img class="uk-invisible" src="./images/Cover.png">
@@ -303,6 +329,11 @@
 	<div id="section-4" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
 		<img class="uk-invisible" src="./images/Cover.png">
+	</div>
+
+	<div id="section-9" class="uk-cover-background">
+		<!-- Just a place holder for responsive bg -->
+		<img class="uk-invisible" src="./images/Section_9.png">
 	</div>
 	<hr>
 
@@ -330,18 +361,28 @@
 	</div>
 	<hr>
 
+	<!-- Start of Reflection -->
+	<div id="reflection" class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-title">
+			Reflection
+		</div>
+
+		<div class="content-body">
+			<br>
+			<br>
+			<b>Uncomprehensive User Evaluation</b><br>
+			Due to the limited time given, user evaluations were not conducted on a large scale. Constrained user group may possess the risk of introducing bias in user behaviors, resulting in imappropriate UI structuring and thus undermine overall user experience.
+		</div>
+	</div>
+
 	<!-- Miscellaneous -->
 	<div id="section-mis" class="uk-height-viewport">
 		<div class="uk-grid">
 			<div class="uk-width-8-10 uk-push-1-10">
 				<div class="section-title section-padding-medium-top">
-					Project Records
+					Appendices
 				</div>
 				<div class="section-content section-padding-small-top">
-					The project starts as a class project for CS3240 Interaction Design. Initial project reports, user studies, other mockups & prototypes could be found <a href="./../../demos/ridenus/index.html" target="_blank">here</a>.
-					<br>
-					<br>
-
 					A full view of the interfaces for the iOS App could be downloaded below.
 					<br>
 					<br>
@@ -364,78 +405,87 @@
 		</div>
 	</div>
 
-<script type="text/javascript">
-	function clean_spy_bar() {
-		$(".scroll-bar-item").removeClass("active-spy-bar");
-	}
+	<script type="text/javascript">
+		function clean_spy_bar() {
+			$(".scroll-bar-item").removeClass("active-spy-bar");
+		}
 
-	function activate_bar_item(element_id) {
-		var child_a = element_id + "-bar";
-		$(child_a).addClass('active-spy-bar');
-	}
+		function activate_bar_item(element_id) {
+			var child_a = element_id + "-bar";
+			$(child_a).addClass('active-spy-bar');
+		}
 
-	function update_scroll_spy_bar(element_id) {
-		clean_spy_bar();
-		activate_bar_item(element_id);
-	}
+		function update_scroll_spy_bar(element_id) {
+			clean_spy_bar();
+			activate_bar_item(element_id);
+		}
 
-	function scroll_to_element(element_id) {
-		// Scroll to element
-		UIkit.Utils.scrollToElement(UIkit.$($(element_id), { /* options */ }));
+		function scroll_to_element(element_id) {
+			// Scroll to element
+			UIkit.Utils.scrollToElement(UIkit.$($(element_id), { /* options */ }));
 
-		// Update Scroll Spy Bar
-		update_scroll_spy_bar(element_id);
-		update_height_info();
-	}
+			// Update Scroll Spy Bar
+			update_scroll_spy_bar(element_id);
+			update_height_info();
+		}
 
-	/* Scroll spy bar */
-	// Minus 10 to get a more grace transaction
-	function get_element_scroll_trigger_point(element_id) {
-		return $(element_id).offset().top - 30;
-	}
-	
-	var introduction_height = get_element_scroll_trigger_point('#introduction');
+		/* Scroll spy bar */
+		// Minus 10 to get a more grace transaction
+		function get_element_scroll_trigger_point(element_id) {
+			return $(element_id).offset().top - 30;
+		}
+		
+		var introduction_height = get_element_scroll_trigger_point('#introduction');
 
-	var design_process_height = get_element_scroll_trigger_point('#design-process');
+		var design_process_height = get_element_scroll_trigger_point('#design-process');
 
-	var final_product_height = 
-		get_element_scroll_trigger_point('#final-product');
+		var final_product_height = 
+			get_element_scroll_trigger_point('#final-product');
 
-	function update_height_info() {
-		introduction_height = get_element_scroll_trigger_point('#introduction');
+		var reflection_height = 
+			get_element_scroll_trigger_point('#reflection');
 
-		design_process_height = get_element_scroll_trigger_point('#design-process');
+		function update_height_info() {
+			introduction_height = get_element_scroll_trigger_point('#introduction');
 
-		get_element_scroll_trigger_point('#final-product');
-	}
+			design_process_height = get_element_scroll_trigger_point('#design-process');
 
-	// Update on resize
-	$(window).resize(function() {
-		update_height_info();
-	})
+			final_product_height = get_element_scroll_trigger_point('#final-product');
 
-	// Scroll spy listener
-	$( window ).scroll(function() {
+			reflection_height = get_element_scroll_trigger_point('#reflection');
+		}
 
-	  	var current_height = $(window).scrollTop();
+		// Update on resize
+		$(window).resize(function() {
+			update_height_info();
+		})
 
-	  	if (current_height < introduction_height) {
-  			clean_spy_bar();
-  		}
-	  	
-  		if (current_height > introduction_height &  current_height < design_process_height) {
-  			update_scroll_spy_bar("#introduction");
-  		}
+		// Scroll spy listener
+		$( window ).scroll(function() {
 
-  		if (current_height >= design_process_height & current_height < final_product_height) {
-  			update_scroll_spy_bar("#design-process");
-  		}
+		  	var current_height = $(window).scrollTop();
 
-  		if (current_height >= final_product_height ) {
-  			update_scroll_spy_bar("#final-product");
-  		}
-	});
-</script>
+		  	if (current_height < introduction_height) {
+	  			clean_spy_bar();
+	  		}
+		  	
+	  		if (current_height > introduction_height &  current_height < design_process_height) {
+	  			update_scroll_spy_bar("#introduction");
+	  		}
+
+	  		if (current_height >= design_process_height & current_height < final_product_height) {
+	  			update_scroll_spy_bar("#design-process");
+	  		}
+
+	  		if (current_height >= final_product_height & current_height < reflection_height) {
+	  			update_scroll_spy_bar("#final-product");
+	  		}
+
+	  		if (current_height >= reflection_height) {
+	  			update_scroll_spy_bar("#reflection");
+	  		}
+		});
+	</script>
 
 </body>
 </html>
