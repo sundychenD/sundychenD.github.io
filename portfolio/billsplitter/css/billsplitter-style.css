@@ -1,0 +1,20 @@
+#cover {
+	background-image: url(./../images/cover.png);
+}
+
+#sample {
+	background-image: url(./../images/sample.png);
+}
+
+#iter1 {
+	background-image: url(./../images/iter1.png);
+}
+
+#iter2 {
+	background-image: url(./../images/iter2.png);
+}
+
+#section-mis {
+	background-color: #ffb526;
+	position: relative;
+}

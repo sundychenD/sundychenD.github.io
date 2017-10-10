@@ -1,3 +1,7 @@
+#top {
+	background-image: url(./../images/Top.png);
+}
+
 #cover {
 	background-image: url(./../images/Cover.png);
 }

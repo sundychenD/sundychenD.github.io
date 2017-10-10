@@ -1,0 +1,8 @@
+#cover {
+	background-image: url(./../images/cover.png);
+}
+
+#section-mis {
+	background-color: #ffb526;
+	position: relative;
+}

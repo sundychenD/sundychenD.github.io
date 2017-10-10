@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Reindeer</title>
+	<title>Bill Splitter</title>
 	<script type="text/javascript" src="./../../js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="./../../js/uikit.min.js"></script>
 	<link rel="stylesheet" href="./../../css/uikit.min.css" />
 	<link rel="stylesheet" href="./../../css/portfolio-style.css" />
-	<link rel="stylesheet" href="./css/reindeer-style.css" />
+	<link rel="stylesheet" href="./css/billsplitter-style.css" />
 </head>
 <body>
-
 	<!-- Nav Bar -->
 	<div class="nav-bottom uk-align-left">
 		<a href="./../../index.html" class="uk-icon-hover uk-icon-home uk-icon-large"></a>
 	</div>
 	<div class="nav-bottom uk-align-right">
-		<a href="./../editalk/index.html" class="uk-icon-hover uk-icon-angle-right uk-icon-large"></a>
+		<a href="./../autodesk/index.html" class="uk-icon-hover uk-icon-angle-right uk-icon-large"></a>
 	</div>
 	<div class="nav-bottom uk-align-right">
-		<a href="./../makecode/index.html" class="uk-icon-hover uk-icon-angle-left uk-icon-large"></a>
+		<a href="./../squares/index.html" class="uk-icon-hover uk-icon-angle-left uk-icon-large"></a>
 	</div>
 
 	<!-- General Info -->
 	<div class="uk-width-7-10 uk-container-center page-info" id="role" >
 		<div class="page-title">
-			Reindeer
+			Bill Splitter 
 		</div>
 
 		<div class="page-sub-title">
-			Interactive Online Tutorial Platform
+			A KLM based Usability Study
 		</div>
 
 		<!-- This is Proj Info -->
@@ -39,31 +38,16 @@
 					My Role
 				</div>
 				<div class="section-content section-padding-small-top">
-					UX Designer
-					<br>
-					Software Engineer
-					<br>
-					Project Manager
-					<br>
-					<br>
-				</div>
-				<div class="section-title section-padding-medium-top">
-					Code Repository
-				</div>
-				<div class="section-content section-padding-small-top">
-					<a href="https://github.com/nus-mtp/reindeer" target="_blank">reindeer@github</a>
-					<br>
-					<br>
+					UX Engineer<br>
+					UI Designer<br>
 				</div>
 			</div>
 			<div class="uk-width-small-1-4">
 				<div class="section-title section-padding-medium-top">
-					Methods
+					Method
 				</div>
 				<div class="section-content section-padding-small-top">
-					Rapid Prototyping
-					<br>
-					Agile Development
+					Usability Evaluation
 					<br>
 				</div>
 			</div>
@@ -72,13 +56,9 @@
 					Practices
 				</div>
 				<div class="section-content section-padding-small-top">
-					Web Design
+					Keystroke Level Modeling
 					<br>
-					Contextual Interview 
-					<br>
-					Software Engineering
-					<br>
-					Project Management 
+					Fitts's Law
 					<br>
 					<br>
 				</div>
@@ -88,11 +68,7 @@
 					Tools
 				</div>
 				<div class="section-content section-padding-small-top">
-					Adobe Photoshop
-					<br>
-					Node.js + Express
-					<br>
-					WebRTC
+					CMU CogTool
 					<br>
 					<br>
 				</div>
@@ -100,7 +76,7 @@
 					Project Time
 				</div>
 				<div class="section-content section-padding-small-top">
-					Mar 2017
+					Nov 2016
 					<br>
 					<br>
 				</div>
@@ -116,184 +92,170 @@
 				<div id="#scroller" class="uk-grid scroll-spy-bar">
 					<div id="introduction-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#introduction')">
 					<a>
-						Introduction
+						Problem Definition
 					</a>	
 					</div>
 
 					<div id="design-process-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#design-process')">
 					<a>
-						Agile Development
+						Evaluation Metrics
 					</a>
 					</div>
 
 					<div id="final-product-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#final-product')">
 					<a>
-						Final Product
+						Usability Analysis
 					</a>
 					</div>
 
 					<div id="reflection-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#reflection')">
 					<a>
-						Debut
+						Refinement
 					</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<hr>
 
-	<div id="top" class="uk-cover-background">
+	<div id="cover" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Top.png">
+		<img class="uk-invisible" src="./images/cover.png">
 	</div>
 	<hr>
 
 	<div id="introduction" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Goal: "Integrated e-Tutorial Experience”
+			Goal: "Human Perception Based UI Efficienty Evaluation"
+		</div>
+		<div class="content-subtitle">
+			Background: NUS CS4249 "Human-Computer Interaction" Class Project
+		</div>
+		<div class="content-body">
+			The project focuses on evaluating UI efficiencies from a human perception point of view. We practised the use of Keystroke-Level Modelling to quantify human behaviors. We applied Fitts's Law in calculating the overall time for each of the user performed tasks. Finally, based on the analysis results, we proposed a new design that shorten the completion to 1/3 of its original.
 		</div>
 
 		<div class="content-subtitle">
-			Background: NUS CS3283/4 "Media Technology" Class Project 
+			Problem: Why they are badly designed?
 		</div>
-
 		<div class="content-body">
-			The 2-semester long course aims to develop a media technology application under the practise of a start up environment. The whole project is built from bare ground and is pushed forward in an agile process. A new build is released for every 2 weeks.
+			Two bill splitting apps are presented, their intention of the original design is to facilitate bill splitting process. There are two sub-tasks to achieve in the process:
+			<br>
+			<br>
+			1. Add the participants names into the application 
+			<br>
+
+			2. Name your expense or event meal
+			<br>
+			<br>
+
+			However, the user experience is not as good as expected, and this project aims to find out "why".
 		</div>
-
-		<div class="content-subtitle">
-			Problem: Why people don't like online meetings? 
-		</div>
-
-		<div class="content-body">
-			Every year, NUS would conduct a "e-learning" week where no physical classes are given but only video records of lectures will be distributed. Watching lecture videos online is fine for students, however, the same approach doesn't work with tutorial sessions. When it comes to e-learning week, every TA is struggling to find "the best" application to give live tutorial sessions online.
-		</div>
-
-		<img src="./images/section_problem.png">
-
-		<div class="content-body">
-			Skype, Google Hangout, Facebook Messenger etc. --these are all great products in their field of specialization. However, none of them is customized for conducting online tutorial sessions. Where a lot of documents are being exchanged, writing and speaking happens at the same time, and TA usually prefers explaining things by hand drawings. 
-		</div>
-
-		<div class="content-subtitle">
-			Solution: Integrated Online Tutorial Platform 
-		</div>
-
-		<div class="content-body">
-			We want to develop a one-stop solution to solve issues faced in using exisitng applications. <b>Reindeer</b> is aiming to present all the features that are essential to conducting tutorials online. 
-		</div>
-
-		<img src="./images/section_features.png">
 	</div>
 	<hr>
 
-	<div id="cover" class="uk-cover-background">
+	<div id="sample" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
+		<img class="uk-invisible" src="./images/sample.png">
 	</div>
 	<hr>
 
 	<div id="design-process" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Project Roll Out
+			Evaluation Metrices
 		</div>
-
 		<div class="content-subtitle">
-			User Studies
+			KLM & Fitts's Law
 		</div>
-
 		<div class="content-body">
-			The user studies were conducted in NUS campus. We interviewed both Teaching assistants and students on their experiences with conducting / attending tutorials online.
+			In the evaluation of <a class="uk-link" href="https://en.wikipedia.org/wiki/Keystroke-level_model">KLM</a>, we delineated the steps and their rationale (in a numbered list) of how users interact with both interface to accomplish the stated task.
 			<br>
 			<br>
-			Basing on the interview results, we then listed a set of requirements for our application.
-			<br>
-			<br>
-			To prioritize our requirements, we devided them into "Functional" and "Non-Functional". Functional requirements are essential for completeness of the application. Non-functionals are good to have features if sufficient amount of time is given.
-		</div>
-
-		<img src="./images/requirement.png">
-
-		<div class="content-subtitle">
-			Minimal Viable Product 
-		</div>
-
-		<div class="content-body">
-			Every two weeks, we ship a new build of the product and have it for user testing, gaining feedbacks and enters the next iteration of development.
-			<br>
-			<br>
-			In each of the iteration, we aim to get at least one functional requirement implemented. 
-			<br>
-			<br>
-			By developing in such a flow, we are able to deliver product at a faster pace and being more flexible in case sudden changes happen in user requirements.
-			
-		</div>
-
-		
-
-		<div class="content-subtitle">
-			Fullstack JavaScript 
-		</div>
-
-		<div class="content-body">
-			Backend developments usually uses a different programming language comparing to the frontend. In our project, we goes fullstack JavaScript because we believe using the same programming language helps both side in understanding each other's program flow.
-			<br>
-			<br>
-			On the front end. We use <b>Vue.js</b> for effective data-binding. On the back end, we use <b>node.js + Express.js</b> for fast server side structuring.
+			Next, we calculated the time of KLM analysis in accomplishing the stated task. We used Fitts Law to calculate the actual cursor movement time and include the actual numbers of all measured A and W (of <a class="uk-link" href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitts Law</a>).
 		</div>
 	</div>
 	<hr>
 
 	<div id="final-product" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Final Product
+			Usability Analysis
 		</div>
-	</div>
+		<div class="content-subtitle">
+			Efficiency Comparison
+		</div>
+		<div class="content-body">
+			Time for completing stated tasks. (Results generated from CogTool)
+		</div>
+		<img src="./images/time.png">
 
-	<div id="section-1" class="uk-cover-background">
-		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
-	</div>
-	<hr>
-
-	<div id="section-2" class="uk-cover-background">
-		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
-	</div>
-	<hr>
-
-	<div id="section-3" class="uk-cover-background">
-		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
-	</div>
-	<hr>
-
-	<div id="section-4" class="uk-cover-background">
-		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
+		<div class="content-subtitle">
+			Efficiency Analysis
+		</div>
+		<div class="content-body">
+			The main drawbacks occurs at long moving distance in Fitts’s Law, thus decease the time when users are navigating with their mouse. The system requires too much mental preparations for each sub-steps in task completion. 
+		</div>
 	</div>
 	<hr>
 
 	<div id="reflection" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Debut
+			Refinement
 		</div>
-
 		<div class="content-subtitle">
-			Final Version 
+			Iteration 1 Refined points
 		</div>
-
+		<br>
 		<div class="content-body">
-			After one year of development, <b>Reindeer</b> made its first offcial debut at 2016 School of Computing project showcase.
-			<br>
-			<br>
-			The project is then selected as a candidate of faculty-reserved <b>Final Year Projects</b> for future undergradutes to pick up and continue its development.
+			<ul>
+				<li>
+					Less Navigation Distance
+				</li>
+				<li>
+					Larger Targetting Clicking Space
+				</li>
+				<li>
+					Less Mental Preparation
+				</li>
+				<li>
+					Reduce Number of Sub-Tasks
+				</li>
+			</ul>
 		</div>
 	</div>
 
-	<div id="section-5" class="uk-cover-background">
+	<div id="iter1" class="uk-cover-background">
 		<!-- Just a place holder for responsive bg -->
-		<img class="uk-invisible" src="./images/Cover.png">
+		<img class="uk-invisible" src="./images/iter1.png">
+	</div>
+	<hr>
+
+	<div class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-subtitle">
+			Iteration 2 Refined Points
+		</div>
+		<br>
+		<div class="content-body">
+			<ul>
+				<li>
+					Further Reduce Mouse Moving Distance
+				</li>
+				<li>
+					No Pop-Ups
+				</li>
+				<li>
+					Support Ratio Split
+				</li>
+				<li>
+					Coloring
+				</li>
+			</ul> 
+		</div>
+	</div>
+
+	<div id="iter2" class="uk-cover-background">
+		<!-- Just a place holder for responsive bg -->
+		<img class="uk-invisible" src="./images/iter2.png">
 	</div>
 	<hr>
 
@@ -301,11 +263,10 @@
 		<div class="uk-grid">
 			<div class="uk-position-bottom">
 				<div class="uk-width-1-1 black-bar uk-text-center white-font">
-					Mar 2016
+					Nov 2016
 				</div>
 			</div>
 		</div>
-		
 	</div>
 
 	<script type="text/javascript">
@@ -389,7 +350,16 @@
 	  		}
 		});
 	</script>
-	
-
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+

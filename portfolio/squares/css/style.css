@@ -89,3 +89,8 @@ p {
 #section-8 {
 	background-image: url(./../images/Section_8.png);
 }
+
+#section-mis {
+	background-color: #ffb526;
+	position: relative;
+}
