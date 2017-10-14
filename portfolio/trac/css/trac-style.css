@@ -1,0 +1,33 @@
+#cover {
+	background-image: url(./../images/Cover.png);
+}
+
+#framework {
+	background-image: url(./../images/framework.png);
+}
+
+#demo {
+	background-image: url(./../images/demo.png);
+}
+
+#dial {
+	background-image: url(./../images/dial.png);
+}
+
+#dial-color {
+	background-image: url(./../images/dial-color.png);
+}
+
+#detailed {
+	background-image: url(./../images/detailed.png);
+}
+
+#mix {
+	background-image: url(./../images/mix.png);
+}
+
+
+#section-mis {
+	background-color: #ffb526;
+	position: relative;
+}
