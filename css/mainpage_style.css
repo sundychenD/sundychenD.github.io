@@ -89,6 +89,10 @@ body {
 	color: var(--custom-black);
 }
 
+.sketch-image {
+	padding-bottom: 30px;
+}
+
 .icon-black {
 	color: var(--custom-black-dark);
 }

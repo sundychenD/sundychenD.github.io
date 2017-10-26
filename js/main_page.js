@@ -17,7 +17,7 @@ function add_active(nav_id) {
 }
 
 function update_block(block_id) {
-	var blocks = ["#projects_block", "#about_block", "#resume_block", "#snippets_block"]
+	var blocks = ["#projects_block", "#about_block", "#resume_block", "#sketches_block"]
 	for (var index = 0; index < blocks.length; index ++) {
 		if (blocks[index] != block_id) {
 			hide_block(blocks[index]);
@@ -28,7 +28,7 @@ function update_block(block_id) {
 }
 
 function update_nav(nav_id) {
-	var navs = ["#projects_nav", "#about_nav", "#resume_nav", "#snippets_nav"]
+	var navs = ["#projects_nav", "#about_nav", "#resume_nav", "#sketches_nav"]
 	for (var index = 0; index < navs.length; index ++) {
 		if (navs[index] != nav_id) {
 			remove_active(navs[index]);
@@ -48,9 +48,9 @@ function projects_action() {
 	update_block("#projects_block");
 }
 
-function snippets_action() {
-	update_nav("#snippets_nav");
-	update_block("#snippets_block");
+function sketches_action() {
+	update_nav("#sketches_nav");
+	update_block("#sketches_block");
 }
 
 function resume_action() {
