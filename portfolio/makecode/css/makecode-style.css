@@ -2,6 +2,10 @@
 	background-image: url(./../images/cover.png);
 }
 
+#journey {
+	background-image: url(./../images/journey.png);
+}
+
 #section-mis {
 	background-color: #ffb526;
 	position: relative;
