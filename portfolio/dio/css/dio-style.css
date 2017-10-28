@@ -1,0 +1,43 @@
+#cover {
+	background-image: url(./../images/Cover.png);
+}
+
+#journey {
+	background-image: url(./../images/Journey.png);
+}
+
+#player {
+	background-image: url(./../images/Player.png);
+}
+
+#collection {
+	background-image: url(./../images/Collection.png);
+}
+
+
+#playlist-v-channel {
+	background-image: url(./../images/PlaylistVChannel.png);
+}
+
+#cover2 {
+	background-image: url(./../images/cover2.png);
+}
+
+#trend {
+	background-image: url(./../images/Trend.png);
+}
+
+#explore {
+	background-image: url(./../images/Explore.png);
+}
+
+#full-view {
+	background-image: url(./../images/FullView.png);
+}
+
+
+
+#section-mis {
+	background-color: #ffb526;
+	position: relative;
+}
