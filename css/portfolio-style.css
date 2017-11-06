@@ -16,7 +16,10 @@ img {
 
 .nav-bottom {
 	color: black;
-	margin: 3%;
+	margin-top: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
 	padding: 1%;
 	border-style: solid;
 	border-color: #cccccc;
