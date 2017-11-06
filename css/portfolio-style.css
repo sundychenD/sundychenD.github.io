@@ -11,7 +11,7 @@ a:hover {
 }
 
 img {
-	margin-bottom: 5%;
+	margin-bottom: 30px;
 }
 
 .nav-bottom {
@@ -27,7 +27,7 @@ img {
 
 
 .page-info {
-	padding-top: 5%;
+	padding-top: 30px;
 }
 
 .page-title {
@@ -115,16 +115,18 @@ hr {
 
 .content-title {
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 .content-subtitle {
 	color: #737373;
 	font-family: 'HelveticaNeue-Medium';
-	padding-top: 5%;
+	padding-top: 30px;
+	padding-bottom: 15px;
 }
 
 .content-body {
-	padding-bottom: 5%;
+	padding-bottom: 30px;
 	text-align: justify;
 }
 
@@ -173,4 +175,12 @@ hr {
 		font-size: 1.5em;
 		line-height: 1.2em;
 	}
+}
+
+.uk-width-7-10 {
+	max-width: 800px;
+}
+
+.uk-width-8-10 {
+	max-width: 800px;
 }
