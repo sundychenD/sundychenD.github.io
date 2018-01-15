@@ -6,7 +6,41 @@
 	background-image: url(./../images/journey.png);
 }
 
+#api {
+	background-image: url(./../images/api.png);
+}
+
+#ui {
+	background-image: url(./../images/ui.png);
+}
+
+
 #section-mis {
 	background-color: #ffb526;
 	position: relative;
+}
+
+.title-bold {
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+}
+
+.content-title {
+	margin-top: 60px;
+}
+
+.content-subtitle {
+	position: relative;
+}
+
+.title-avatar {
+	height: 30px;
+	margin: 0px;
+	right: 0px;
+	position: absolute;
+}
+
+.quote {
+	font-size: 30px;
 }

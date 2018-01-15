@@ -46,7 +46,7 @@
 					Code Repository
 				</div>
 				<div class="section-content section-padding-small-top">
-					<a class="uk-link" href="https://github.com/JCSPEC/Microsoft_MakeCode" target="_blank">Microsoft_MakeCode@Github</a>
+					<a class="uk-link" href="https://github.com/sundychenD/BuildUFace" target="_blank">BuildUFace@Github</a>
 					<br>
 					<br>
 				</div>
@@ -61,6 +61,12 @@
 					Software Engineering
 					<br>
 					UX Design
+				</div>
+				<div class="section-title section-padding-medium-top">
+					Live Version
+				</div>
+				<div class="section-content section-padding-small-top">
+					<a class="uk-link" href="https://sundychend.github.io/BuildUFace/" target="_blank">KAMEN</a>
 				</div>
 			</div>
 			<div class="uk-width-small-1-4">
@@ -101,19 +107,19 @@
 
 					<div id="design-process-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#design-process')">
 					<a>
-						Requirement Analysis
+						Project Analysis
 					</a>
 					</div>
 
 					<div id="final-product-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#final-product')">
 					<a>
-						Implementation
+						Design Process
 					</a>
 					</div>
 
 					<div id="reflection-bar" class="uk-width-small-1-4 scroll-bar-item" onclick="scroll_to_element('#reflection')">
 					<a>
-						Final Product
+						Show Case
 					</a>
 					</div>
 				</div>
@@ -134,7 +140,7 @@
 		</div>
 
 		<div class="content-subtitle">
-			Background: Customize Coding Environment with MakeCode.
+			Background
 		</div>
 
 		<div class="content-body">
@@ -142,34 +148,37 @@
 		</div>
 
 		<div class="content-subtitle">
-			Problem: Apple Animoji is super cool, can we teach people how to make it?
+			Problem
 		</div>
 
 		<div class="content-body">
 			Augmented reality applications has become pervasive across desktop and mobile platforms. Popular AR apps such as SNOW, Snapchat and the newly released Apple Animoji are very popular amongst people. However, building such an AR app can be very difficult.
-			<br>
-			<br>
+		</div>
+
+		<img src="./images/animoji.png">
+
+		<div class="content-body">
 			How can we empower people with few or even none programming background to build their own AR apps? Microsoft MakeCode provides us a solution.
 			<br>
 			<br>
-			Microsoft MakeCode is a platform providing a programming environment  that enables people with few programming experiences to build complicated applications. Instead of letting user writing every details of the code, user would develop their application through a pseudo code playground that is non-programmer friendly.
+			Microsoft MakeCode is a platform providing a JavaScript programming environment  that enables people with few programming experiences to build complicated applications. Instead of letting user writing every details of the code, user would develop their application through a pseudo code playground that is non-programmer friendly.
 		</div>
 	</div>
 	<hr>
 
 	<div id="design-process" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Requirement Analysis
+			Project Analysis
 		</div>
 
 		<div class="content-subtitle">
-			Who we build for
+			<span class="title-bold">WHO</span> we build for
 		</div>
 
 		<img src="./images/persona.png">
 
 		<div class="content-subtitle">
-			What we want to achieve
+			<span class="title-bold">WHAT</span> we want to achieve
 		</div>
 
 		<div class="content-body">
@@ -177,6 +186,7 @@
 			<br>
 			<br>
 			More importantly, as the core feature of this application, it should provide user with a diverse set of face tracking based augmented reality functions so that user could customize their own AR apps in a creative way.
+			<br>
 			<br>
 			<img src="./images/requirements.png">
 			
@@ -200,24 +210,141 @@
 
 	<div id="final-product" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Implementation
+			Design Process
+		</div>
+
+		<div class="content-body">
+			The project is developed through a double diamond structure. We always started off with research or brain storming to gather a rich set of ideas, then narrowing down into a few major pain points. 
+		</div>
+
+		<img src="./images/diamond.png">
+
+		<!-- DISCOVER -->
+		<div class="content-subtitle">
+			<span class="title-bold">DISCOVER</span>
+			<img src="./images/discover.png" class="title-avatar">
+		</div>
+
+		<div class="content-body">
+			We first started looking at exisiting applications in the market and examine how they tackle similar problems. 
 		</div>
 
 		<div class="content-subtitle">
-			Tech Stack
+			Case Study: MIT Scratch & MakeCode micro:bit
+		</div>
+
+		<img src="./images/case.png">
+
+		<div class="content-body">
+			MIT Scratch is designed for Kids to learn how to program by constructing blocks of different functions. Each of the blocks is able to add one animation effect to the cat in the simulator. For instance “move 10 steps” would trigger the cat moving 10 frames towards a preset direction.
+			<br>
+			<br>
+			MakeCode micro:bit is a native MakeCode project. It has a hardware simulator environment for user to test their constructed code. Creating project within micro:bit requires users to have a basic mental model of hardware I/O.
+			<br>
+			<br>
+			Both projects are the best representation of their field. Scratch is a great educational platform for people who has zero programming knowledge. micro:bit however requires users to have a bit knowledge of programming, but not to the point of knowing every detail of how hardware works. Both provides user great flexibility in terms of function construction. We thus compared these two platform in terms of language design, teaching approach etc.
+		</div>
+
+		<img src="./images/compare.png">
+
+		<!-- DEFINE -->
+		<div class="content-subtitle">
+			<span class="title-bold">DEFINE</span>
+			<img src="./images/define.png" class="title-avatar">
+		</div>
+
+		<div class="content-body">
+			To explore the pain point of our user, the question we have to answer is: 
+			What's the most frustrated moment of learning coding? 
+			<br>
+			<br>
+			We invited our user to use some existing MakeCode projects, and asked their feedbacks the usage.
+			<br>
+			<br>
+			From the survey, we get a rough picture of the actual user problem. 
+		</div>
+
+		<img src="./images/pain.png">
+
+		<div class="content-body">
+			From there on, the problem then is narrowed down to three opportunity areas worth exploring:
+			<br>
+			<ul>
+				<li>
+					<b>HMW</b> ease the learning curve of JavaScript semantics?
+				</li>
+				<li>
+					<b>HMW</b> reduce the complexity of blocky construction?
+				</li>
+				<li>
+					<b>HMW</b> make an easy-to-understand AR simulator?
+				</li>
+			</ul>
+		</div>
+
+		<!-- DEVELOP -->
+		<div class="content-subtitle">
+			<span class="title-bold">DEVELOP</span>
+			<img src="./images/develop.png" class="title-avatar">
+		</div>
+
+		<div class="content-body">
+			With the opportunity area being defined, we then started off our ideation.
+		</div>
+		
+		<img src="./images/ideation.png">
+
+		<div class="content-subtitle">
+			Plain English in Function Blocks
 		</div>
 		<div class="content-body">
-			The whole project is coded with <i>TypeScript</i> for better program architecture. <br>
-			The face tracking library we use is <i><a class="uk-link" href="https://github.com/auduno/clmtrackr">clmtracker</a></i>: a client side JavaScript library for face detecting & tracking.
+			In stead of having technical function blocks e.g. "canvas creation", simply name it as "draw". Function blocks named in plain English creates a better beginner friendly learning environment so that the user would not be scared away by complicated technical jargons.
 		</div>
 
 		<div class="content-subtitle">
-			User Workflow
+			Start with Simple Functions
 		</div>
 		<div class="content-body">
-			User always start with a JavaScript function call, which is the main entry of the whole program. After that, user would call face detection program to track user faces. Once the face has been located from the webcam, user would be able to add different AR effects onto it and start their customization.
+			In stead of giving user overly complicated function blocks, allow user to have a set of simple function blocks for them to play with. It's good for the user to establish a mental model of the coding environment and getting familiar with programming with function blocks.
 		</div>
-		<img src="./images/workflow.png">
+
+		<div class="content-subtitle">
+			Hide Unnecessary Implementation Details
+		</div>
+		<div class="content-body">
+			The advantage of coding with function blocks is that it can hide implementation details. For beginners, they are not required to know how the function blocks actually works behind the scene. To them, all that matters is the input and output of the function block.
+		</div>
+
+		<div class="content-subtitle">
+			Integrate Complicate Logic
+		</div>
+		<div class="content-body">
+			Although the programming with function blocks imposes the idea of "Hiding Details" into the coding environment, we still need to consider what level of detail is being hidden. We need to find a balance between hiding too much detail thus loosing flexibility in construction, or exposing too much detail thus overwhelming the user.
+		</div>
+
+		<div class="content-subtitle">
+			Use Daily Life Objects in AR Simulator
+		</div>
+		<div class="content-body">
+			The best way to make the coding environment beginner friendly is giving user objects they could recognize to play with. With that, we used a set of wel-recognized facial masks in our implementation.
+		</div>
+
+		<!-- DELIVER -->
+		<div class="content-subtitle">
+			<span class="title-bold">DELIVER</span>
+			<img src="./images/deliver.png" class="title-avatar">
+		</div>
+
+		<div class="content-subtitle">
+			User Journey Map
+		</div>
+
+		<div class="content-body">
+			To map out the flow of interaction, we build our user journey map.
+			<br>
+			<br>
+			With the help of journey map, we could better define possible actions the user could perform in using the application. It also helps us understand the user's mental model and their goals in the usage.
+		</div>
 	</div>
 	<hr>
 
@@ -227,12 +354,145 @@
 	</div>
 	<hr>
 
+	<div class="uk-width-7-10 uk-container-center page-info">
+		<div class="content-subtitle">
+			Tech Stack
+		</div>
+		<div class="content-body">
+			The whole project is coded with <b>TypeScript</b> for better program architecture. <br>
+			The face tracking library we use is <i><a class="uk-link" href="https://github.com/auduno/clmtrackr">clmtracker</a></i>: a web browser side JavaScript library for face detecting & tracking.
+		</div>
+
+		<img src="./images/tech.png">
+
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Prototype 1.0
+			</span>
+		</div>
+		<div class="content-body">
+			In the first prototype, we delivered four basic function blocks.
+			<br>
+				<ul>
+					<li>
+						Face Masks
+					</li>
+					<li>
+						Face Substitution
+					</li>
+					<li>
+						Face Outline
+					</li>
+					<li>
+						Face Deformation
+					</li>
+				</ul>
+			Simple as they are defined, each of the function is performing one atomic action to user's face in the webcam.
+			<br>
+			<br>
+			By calling the function inside a "forever loop", or an infinite "while loop", the simulator would use the webcam video to lively render user's face with the selected effect.
+		</div>
+		<img src="./images/mask.png">
+		<img src="./images/substitution.png">
+		<img src="./images/outline.png">
+		<img src="./images/deformation.png">
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Evaluation 1.0
+			</span>
+
+		</div>
+		<div class="content-body">
+			In the first prototype, simplicity of function blocks is what we aiming to achieve. Thus, every augmented reality function blocks delivered does only one atomic action and does exactly as its description says.
+			<br>
+			<br>
+			This indeed satisfy the need for non programmer to use the application. User's ability to customize their own augmented reality logic flow is sacrificed.
+			<br>
+			<br>
+			In order to make the function blocks more playable, we need to introduce some complexities to advanced users.
+		</div>
+		<img src="./images/balance.png">
+
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Prototype 2.0
+			</span>
+		</div>
+		<div class="content-body">
+			To introduce more customization into the programming environment, we created a new module -- Face Detector.
+			<br>
+			<br>
+			All the augmented reality function blocks are kept as they are and can be used as normal. The newly introduced module is separated from them.
+			<br>
+			<br>
+			For beginner users, they can  explore the full function of augmented reality in an effortless way. However, for advanced users, they could manipulate function blocks in Face Detector to create more customized programs.
+			<br>
+			<br>
+			Even within the Face Detector module, functions are separated into basic and advanced categories. By default, advanced features are hidden in the dropdown and would not expose to the user, thus reducing the load of information.
+		</div>
+		<img src="./images/detector.png">
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Evaluation 2.0
+			</span>
+		</div>
+		<div class="content-body">
+			With augmented reality module and face detector module, we are able to satisfy the need of user at different skill set levels. The project is able to deliver a complete programming experience at the moment. However, can we do more about this?
+			<br>
+			<br>
+			The fun part about MIT Scratch is that the whole programming experience more of a gaming experience. As we see users are able to manipulate the character in the simulator in Scratch, we are thinking of whether we could also introducing similar gaming experience into the programming environment.
+		</div>
+		<img src="./images/balance2.png">
+
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Prototype 3.0
+			</span>
+		</div>
+		<div class="content-body">
+			In the third prototype, we add a gaming module. Inside which has a ball dropping game function block that user could add into their programming logic.
+			<br>
+			<br>
+			The gaming module also categorize its functions into basic and advanced levels to cater user with different skill sets.
+		</div>
+		<img src="./images/gaming.png">
+		<div class="content-subtitle">
+			<span class="title-bold">
+				Evaluation 3.0
+			</span>
+		</div>
+		<div class="content-body">
+			We conducted a series of contextual interviews to see how user feels about he overall programming experience. 
+			<br>
+			<br>
+			As they are using the application to build their own logics, we recorded the function blocks they used.
+		</div>
+		<img src="./images/evaluation.png">
+		<div class="content-body">
+			As of the final function block layout, we have the complete structure shown below.
+		</div>
+	</div>
+	<hr>
+
+	<div id="api" class="uk-cover-background">
+		<!-- Just a place holder for responsive bg -->
+		<img class="uk-invisible" src="./images/api.png">
+	</div>
+	<hr>
 
 	<div id="reflection" class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-title">
-			Final Product
+			Show Case
 		</div>
 
+		<div class="content-subtitle">
+			The Name "KAMEN"
+		</div>
+		<div class="content-body">
+			The name "KAMEN" comes from the Japanese word 仮面 (reads kamen), which stands for facial masks. The word is usually used with super heros who always wear masks when bring people justice. We hope our users could build their own KAMEN hero within our application.
+		</div>
+		<img src="./images/kamen.png">
+		
 		<div class="content-subtitle">
 			UI Layout
 		</div>
@@ -240,21 +500,34 @@
 			UI layout inherits from the standard MakeCode template. Where there are three major components: 
 			<br>
 			<br>
-			<i>Simulator</i>: Realtime rendering.
+			<b>Simulator</b>: Realtime rendering.
 			<br>
-			<i>Function Library</i>: User callable APIs.
+			<b>Function Block Library</b>: User callable APIs.
 			<br>
-			<i>Code Block Map</i>: A visual bubble map used for displaying user code.
+			<b>Code Block Playground</b>: A visual playground used for displaying user function blocks.
 		</div>
-		<img src="./images/ui-elements.png">
+	</div>
+	
+	<hr>
+	<div id="ui" class="uk-cover-background">
+		<!-- Just a place holder for responsive bg -->
+		<img class="uk-invisible" src="./images/ui.png">
+	</div>
+	<hr>
 
+	<div class="uk-width-7-10 uk-container-center page-info">
 		<div class="content-subtitle">
-			Achieved Effects
+			Presentation
 		</div>
 		<div class="content-body">
-			The project is still in rapid development iteration, however the listed effects are ahieved in the latest build. More of the AR effects would come out as the project gets push forward.
+			The project is presented during Cornell MPS 2017 Fall Project Showcase & Cornell 2018 Engineering Project Showcase.
 		</div>
-		<img src="./images/effects.png">
+		<img src="./images/showcase.png">
+		<div class="content-body">
+			The project is being published onto Microsoft MakeCode Labs. And can be accessed <a href="https://sundychend.github.io/BuildUFace/" target="_blank">here</a>.
+			<br>
+			<br>
+		</div>
 	</div>
 
 	<div id="section-mis" class="uk-cover-background">
