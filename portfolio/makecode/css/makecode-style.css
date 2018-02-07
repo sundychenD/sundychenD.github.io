@@ -14,6 +14,61 @@
 	background-image: url(./../images/ui.png);
 }
 
+#blocky {
+	background-image: url(./../images/blocky.png);
+}
+
+#vs {
+	background-image: url(./../images/vs.png);
+}
+
+#faces {
+	background-image: url(./../images/faces.png);
+}
+
+#colors {
+	background-image: url(./../images/colors.png);
+}
+
+#surveydata {
+	background-image: url(./../images/surveydata.png);
+}
+
+#solutions {
+	background-image: url(./../images/solutions.png);
+}
+
+#hmw {
+	background-image: url(./../images/hmw.png);
+}
+
+#diamond {
+	background-image: url(./../images/diamond.png);
+}
+
+#prototype2 {
+	background-image: url(./../images/prototype2.png);
+}
+
+#prototype3 {
+	background-image: url(./../images/prototype3.png);
+}
+
+#demo {
+	background-image: url(./../images/demo.png);
+}
+
+#layout {
+	background-image: url(./../images/layout.png);
+}
+
+#usecases {
+	background-image: url(./../images/usecases.png);
+}
+
+#bottom {
+	background-image: url(./../images/bottom.png);
+}
 
 #section-mis {
 	background-color: #ffb526;
